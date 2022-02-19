@@ -159,6 +159,8 @@ header a:active {
 .h{
     background-color: var(--main-color);
     color: var(--sec-color);
+    padding: 0 0.5rem;
+    margin: 0
 }
 
 .catogery-list{
@@ -183,6 +185,14 @@ header a:active {
 
 img{
     width: 100%;
+}
+
+.brand {
+    padding: .5rem 1rem;
+}
+
+li i.bx.bxs-right-arrow{
+    font-size: 12px;
 }
 
 /* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/

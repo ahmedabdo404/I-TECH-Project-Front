@@ -158,8 +158,28 @@ header a:active {
 .h{
     background-color: var(--main-color);
     color: var(--sec-color);
-    padding: 0 1% !important;
-    margin: 0 !important;
+    padding: 0 0.5rem;
+    margin: 0
+}
+
+#SELLER,
+#BUYER {
+    accent-color: brown;
+}
+
+.b{
+    padding: 0.4rem 0.8rem;
+    color: var(--sec-color);
+    background-color: var(--main-color);
+    border: 0;
+
+    border-radius: 5px;
+}
+
+.login-inputs label,
+.login-inputs input
+{
+    margin-top: 1rem
 }
 
 .catogery-list{
@@ -180,6 +200,14 @@ header a:active {
 .accordion-button:not(.collapsed){
     color:var(--main-color);
     background-color:var(--sec-color);
+}
+
+.brand {
+    padding: .5rem 1rem;
+}
+
+li i.bx.bxs-right-arrow{
+    font-size: 12px;
 }
 
 /* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/
