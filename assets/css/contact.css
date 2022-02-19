@@ -240,9 +240,10 @@ header a:active {
     margin: 0
 }
 
-#SELLER,
-#BUYER {
-    accent-color: brown;
+
+.login-inputs input
+{
+    margin-bottom: 1rem;
 }
 
 .b{
@@ -253,13 +254,7 @@ header a:active {
     border-radius: 5px;
 }
 
-.login-inputs label,
-.login-inputs input
-{
-    margin-top: 1rem
-}
-
-/*  footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/ */
+/* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/
 #footer {
     position: relative;
     bottom: 0;
