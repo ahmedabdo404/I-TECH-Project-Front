@@ -41,6 +41,18 @@ let counter = setInterval(() => {
     }
 }, 1000)
 
+//animation
+var options = {
+    strings: ['All Tech ... in one place'],
+    typeSpeed: 100,
+    loop: true,
+    loopCount: Infinity,
+    showCursor:false,
+    backSpeed: 100
+};
+var typed = new Typed('.element', options);
+
+
 // back to top
 let upBtn = document.querySelector(".back-top")
 
