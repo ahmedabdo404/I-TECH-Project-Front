@@ -1,10 +1,19 @@
+// hide nav bar
+let menu = document.querySelector('#menu-bar i')
+let navbar = document.querySelector('.top-nav')
+
+menu.onclick = function(){
+    menu.classList.toggle('fa-times')
+    navbar.classList.toggle('active')
+}
+
 // countdown timer
 let daysDiv = document.querySelector(".days")
 let hoursDiv = document.querySelector(".Hours")
 let minutesDiv = document.querySelector(".Minutes")
 let secondsDiv = document.querySelector(".Seconds")
 
-let timer = new Date("Feb 28, 2022 23:59:59").getTime();
+let timer = new Date("Mar 1, 2022 00:00:00").getTime();
 // console.log(timer)
 
 let counter = setInterval(() => {
@@ -32,6 +41,7 @@ let counter = setInterval(() => {
     }
 }, 1000)
 
+<<<<<<< HEAD
 
 var options = {
     strings: ['All Tech ... in one place'],
@@ -42,3 +52,20 @@ var options = {
     backSpeed: 100
 };
 var typed = new Typed('.element', options);
+=======
+// back to top
+let upBtn = document.querySelector(".back-top")
+
+window.onscroll = () => {
+    // console.log(window.scrollY)
+    if(window.scrollY >= 600){
+        upBtn.style = ("opacity: 1;")
+    }else{
+        upBtn.style = ("opacity: 0;")
+    }
+}
+
+upBtn.onclick = () =>{
+    scrollTo({ top: 0, behavior: "smooth"});
+}
+>>>>>>> 0b0317e3476aace5b34668620780b6adf15eed47

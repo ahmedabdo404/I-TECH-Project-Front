@@ -8,6 +8,7 @@
     font-family:  'Poppins', 'Calibri', 'Trebuchet MS', 'sans-serif';
     scroll-behavior: smooth;
 }
+
 :root{
     --main-color: #f5a30a;
     --sec-color: #FFF;
@@ -35,6 +36,7 @@ header {
     top: 0;
     z-index: 5;
     align-content: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 header nav{
@@ -48,7 +50,7 @@ header nav{
 .top-nav {
     display: flex;
     list-style: none;
-    margin-left: -60%;
+    /* margin-left: -60%; */
     color: var(--sec-color);
     margin-bottom: 0;
 }
@@ -78,7 +80,6 @@ header nav{
 /* temporary cursor (develpoment)*/
 header li {
     cursor: pointer;
-
 }
 
 header a,
@@ -88,7 +89,61 @@ header a:active {
     color: var(--third-color);
 }
 
+/* menu bar */
+#menu-bar i{
+    font-size: 2rem;
+    cursor: pointer;
+    color:var(--third-color);
+    border:.1rem solid var(--third-color);
+    border-radius: .3rem;
+    padding:.4rem 0.75rem;
+    display: none;
+}
 
+@media(max-width:768px){
+
+    #menu-bar i{
+        display: initial;
+
+    }
+
+    .top-nav {
+        position: absolute;
+        top:100%; left: 50%;
+        display: block;
+        color: var(--third-color);
+        width: 50%;
+        background: var(--fifth-color);
+        border-top: .1rem solid rgba(0,0,0,.1);
+
+        border-radius: 0 0 0 10px;
+
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: var(--transition1);
+        opacity: 0.9;
+        padding: 1rem;
+    }
+
+    .top-nav li {
+        margin-top: 0.4rem;
+        margin-left: 15%;
+    }
+      /*----------------- imp------------- */
+    .top-nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header nav {
+        justify-content: end;
+    }
+
+    .top-nav li:nth-child(1):before {
+        display: none;
+    }
+}
 /* items bar */
 .items-section{
     background-color: var(--sec-color);
@@ -154,6 +209,28 @@ header a:active {
     color: var(--sec-color);
 }
 
+/* back to top icon */
+.back-top {
+    position: fixed;
+    display: flex;
+    bottom: 4%;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    z-index: 5;
+    cursor: pointer;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.2s all ;
+    /* align-items: center; */
+}
+
+.back-top i {
+    font-size: 40px;
+    color: var(--sec-color)
+}
 
 /* carousel-slider ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>carousel-slider*/
 .landing {
@@ -200,9 +277,9 @@ header a:active {
 .carousel-caption {
     z-index: 2;
     transition: all 1s;
-    animation: change-color 3s infinite alternate both;
-    opacity: 1;
+    animation: change-color 3s infinite alternate linear ;
 }
+
 .carousel-caption:hover {
     color: var(--main-color) !important;
 }
@@ -210,7 +287,7 @@ header a:active {
 @keyframes change-color {
     0% {
         color: var(--main-color);
-        opacity: 0.2;
+        opacity: 0.4;
     }
     100% {
         color: var(--third-color);
