@@ -86,7 +86,7 @@ header a,
 header a:visited,
 header a:active {
     text-decoration: none;
-    color: var(--third-color);
+    color: var(--sec-color);
 }
 
 /* menu bar */
@@ -231,6 +231,7 @@ header a:active {
     font-size: 40px;
     color: var(--sec-color)
 }
+
 /* body ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>body*/
 
 .h{

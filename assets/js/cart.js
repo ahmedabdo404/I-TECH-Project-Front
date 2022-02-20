@@ -1,13 +1,22 @@
-let cartIcon = document.querySelector("#cart-icon");
+let cartIcon = document.querySelector(".cart-icon");
 let cart = document.querySelector(".cart");
 let cartProducts = document.querySelector(".Products");
 let closeCart = document.querySelector("#close-cart");
 
 let productsTitle = document.querySelectorAll(".product-title");
 let productsPrice = document.querySelectorAll(".price");
+let productslink = document.querySelectorAll(".p-link");
 
 let productsAdd = document.querySelectorAll(".product-box i");
 
+
+// add links to products
+window.onload = () => {
+    for(let l of productslink)
+        l.setAttribute("href", "details.html");
+}
+
+// add items to cart
 let cartBox = [];
 for (let index in productsAdd) {
     productsAdd[index].onclick = () => {
@@ -75,7 +84,6 @@ function ready() {
         var button = removeCartButtons[index];
         button.addEventListener("click", removeCartItem);
     }
-
 }
 
 // Remove Item From Cart

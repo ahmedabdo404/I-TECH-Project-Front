@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-Tech</title>
+    <!-- External Libs -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/details.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <ul class="top-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>My Account</li>
+                <li> <a href="cart.html">Shopping Cart</a></li>
+                <li><a href="Checkout.html">Checkout</a></li>
+            </ul>
+            <div id="menu-bar"><i class='bx bx-menu'></i></div>
+        </nav>
+        <section class="items-section">
+            <div class="items-bar container">
+
+
+                <p> I-TECH</p>
+                <div class="search-bar d-flex justify-content-center align-items-center">
+                    <input type="text" placeholder="Search your item">
+                    <div class="Search-icon">
+                        <i class='bx bx-search-alt-2'></i>
+                    </div>
+                </div>
+                <div class="btn-group account">
+                    <p type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                        Account
+                    </p>
+                    <ul class="dropdown-menu dropdown-menu-center">
+                        <a href="login.html" targ">
+                            <li><button class="dropdown-item" type="button">Sign In</button></li>
+                        </a>
+                        <li><button class="dropdown-item" type="button">Account</button></li>
+
+                        <a href="orders.html" targ">
+                            <li><button class="dropdown-item" type="button">Orders</button></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <i class='bx bx-cart'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- back to top icon -->
+        <div class="back-top">
+            <i class='bx bx-up-arrow-alt'></i>
+        </div>
+    </header>
+
+    <section class="items-section">
+        <div class="container">
+            <div class="h m-3 ms-0">
+                <p>Product Details</p>
+            </div>
+            <div class="details d-flex flex-row">
+                <div id="carouselExampleDark" class="carousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/imgs/carts/21.jpeg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/carts/22.jpeg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/carts/23.jpeg" class="d-block" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="speces">
+                    <div class="Product-Title">
+                        <h4>Product Title</h4>
+                        <hr>
+                        <span class="d-block">
+                            Brand:
+                            <p class="d-inline">HP</p>
+                        </span>
+                        <span class="d-block">
+                            Availability:
+                            <p class="d-inline">Instock</p>
+                        </span>
+                    </div>
+                    <div class="Product-dimensions">
+                        <h4>Product Dimensions</h4>
+                        <hr>
+                        <span class="d-block">
+                            Length:
+                            <p class="d-inline">40cm</p>
+                        </span>
+                        <span class="d-block">
+                            width:
+                            <p class="d-inline">60cm</p>
+                        </span>
+                        <span>
+                            Height:
+                            <p class="d-inline">60cm</p>
+                        </span>
+                    </div>
+                    <div class="Product-reviews">
+                        <h4>Product Reviews</h4>
+                        <hr>
+                        <span class="d-block">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <p class="d-inline">&nbsp;&nbsp;&nbsp;1 review</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="Desc">
+                    <div class="Product-Description">
+                        <h4>Product description</h4>
+                        <hr>
+                        <span class="d-block">
+                            <p class="d-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, id
+                                distinctio. Earum officiis qui dolorum facere recusandae voluptates quaerat dolores
+                                ratione, maiores vel non dicta asperiores? Expedita dicta sunt in.</p>
+                        </span>
+                    </div>
+                    <div class="Product-price">
+                        <h4>Product price</h4>
+                        <hr>
+                        <span class="d-block price-val">
+                            <p class="d-inline">600$</p>
+                            <p class="d-inline">499$</p>
+                        </span>
+                        <span class="d-flex justify-content-center align-items-center flex-row add-to-cart">
+                            <i class='bx bxs-cart-add add-cart '></i>
+                            <p class="d-inline">add-to cart</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="custome-accordion" class="d-flex flex-column">
+                <div class="d-flex flex-row" id="ca-title">
+                    <span>Description</span>
+                    <span>Specification</span>
+                    <span>reviews</span>
+                </div>
+                <div class="d-flex flex-row" id="ca-body">
+                    <div>
+                        Body Description:<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quo facere aliquam earum hic nemo repudiandae ducimus est laboriosam doloribus eos beatae fugit veniam eum maxime, ipsum iure similique fuga?
+                    </div>
+                    <div hidden>
+                        Body Specification:<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt deserunt minima possimus repellendus corporis aut cum quo quaerat! Qui ducimus voluptates vero! Voluptates earum iure quod eligendi modi beatae quia?
+                    </div>
+                    <div hidden>
+                        Body review:<br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem, atque nemo tenetur veritatis fuga dolore modi exercitationem quidem labore accusantium, delectus reiciendis quam voluptates architecto hic debitis sapiente earum.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="border-top footer text-muted">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-evenly">
+
+
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Privacy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>MY Account</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="cart.html">My Cart</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Orders</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Help</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>I-TECH</h3>
+                        <p>
+                            ITI Menofia Branch <br>
+                            Menofia, Shebin Elkom<br>
+                            Egypt <br><br>
+                            <strong>Phone:</strong> +20 1114474365<br>
+                            <strong>Email:</strong> ahmed.elzahed404@gmail.com<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4 inner-footer">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span> I-TECH
+                        </span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
+                        Team</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/details.js"></script>
+</body>
+
+</html>

@@ -86,7 +86,7 @@ header a,
 header a:visited,
 header a:active {
     text-decoration: none;
-    color: var(--third-color);
+    color: var(--sec-color);
 }
 
 /* menu bar */

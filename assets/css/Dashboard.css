@@ -9,24 +9,27 @@
 
 :root{
     /* ===== Colors ===== */
-    --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
     --main-color: #f5a30a;
-    --main-color-light: #F6F5FF;
-    --toggle-color: #DDD;
-    --text-color: #707070;
+    --sec-color: #FFF;
+    --third-color: #f1f1f1;
+    --forth-color: #272727;
+    --fifth-color: #707070;
+    --sixth-color: #ffe047;
+    --seventh-color: #DDD;
+    
+    /* ====== Fonts ====== */
+    --font-size1: 35px;
+    --font-size2: 20px;
 
     /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
+    --transition1: all 0.2s ease;
+    --transition2: all 0.3s ease;
 }
 
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
-    transition: var(--tran-05);
+    background-color: var(--third-color);
+    transition: var(--transition2);
 }
 
 ::selection{
@@ -35,12 +38,12 @@ body{
 }
 
 body.dark{
-    --body-color: #18191a;
-    --sidebar-color: #282929;
+    --third-color: #18191a;
+    --sec-color: #282929;
     --main-color: #3a3b3c;
-    --main-color-light: #3a3b3c;
-    --toggle-color: #fff;
-    --text-color: #ccc;
+    /* --forth-color: #eaeaea; */
+    --fifth-color: #ccc;
+    --seventh-color: #fff;
 }
 
 .dark ::selection{
@@ -56,8 +59,8 @@ body.dark{
     height: 100%;
     width: 250px;
     padding: 10px 14px;
-    background: var(--sidebar-color);
-    transition: var(--tran-05);
+    background: var(--sec-color);
+    transition: var(--transition2);
     z-index: 100;  
 }
 .sidebar.close{
@@ -91,8 +94,8 @@ body.dark{
 
 .sidebar .text,
 .sidebar .icon{
-    color: var(--text-color);
-    transition: var(--tran-03);
+    color: var(--fifth-color);
+    transition: var(--transition1);
 }
 
 .sidebar .text{
@@ -150,33 +153,29 @@ header .image-text .profession{
     height: 25px;
     width: 25px;
     background-color: var(--main-color);
-    color: var(--sidebar-color);
+    color: var(--sec-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     cursor: pointer;
-    transition: var(--tran-05);
+    transition: var(--transition2);
 }
 
 body.dark .sidebar header .toggle{
-    color: var(--text-color);
+    color: var(--fifth-color);
 }
 
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
 }
 
-.sidebar .menu{
-    margin-top: 40px;
-}
-
 .sidebar li.search-box{
     border-radius: 6px;
     background-color: var(--main-color-light);
     cursor: pointer;
-    transition: var(--tran-05);
+    transition: var(--transition2);
 }
 
 .sidebar li.search-box input{
@@ -185,11 +184,11 @@ body.dark .sidebar header .toggle{
     outline: none;
     border: none;
     background-color: var(--main-color-light);
-    color: var(--text-color);
+    color: var(--fifth-color);
     border-radius: 6px;
     font-size: 17px;
     font-weight: 500;
-    transition: var(--tran-05);
+    transition: var(--transition2);
 }
 .sidebar li a{
     list-style: none;
@@ -201,7 +200,7 @@ body.dark .sidebar header .toggle{
     width: 100%;
     border-radius: 6px;
     text-decoration: none;
-    transition: var(--tran-03);
+    transition: var(--transition1);
 }
 
 .sidebar li a:hover{
@@ -209,11 +208,12 @@ body.dark .sidebar header .toggle{
 }
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text{
-    color: var(--sidebar-color);
+    color: var(--sec-color);
 }
+
 body.dark .sidebar li a:hover .icon,
 body.dark .sidebar li a:hover .text{
-    color: var(--text-color);
+    color: var(--fifth-color);
 }
 
 .sidebar .menu-bar{
@@ -230,7 +230,15 @@ body.dark .sidebar li a:hover .text{
     border-radius: 6px;
     background-color: var(--main-color-light);
     position: relative;
-    transition: var(--tran-05);
+    transition: var(--transition2);
+}
+
+.menu-links{
+    padding: 0;
+}
+
+.nav-link {
+    padding: 0;
 }
 
 .menu-bar .mode .sun-moon{
@@ -267,8 +275,8 @@ body.dark .mode .sun-moon i.moon{
     height: 22px;
     width: 40px;
     border-radius: 25px;
-    background-color: var(--toggle-color);
-    transition: var(--tran-05);
+    background-color: var(--seventh-color);
+    transition: var(--transition2);
 }
 
 .switch::before{
@@ -280,8 +288,8 @@ body.dark .mode .sun-moon i.moon{
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    background-color: var(--sidebar-color);
-    transition: var(--tran-04);
+    background-color: var(--sec-color);
+    transition: var(--transition2);
 }
 
 body.dark .switch::before{
@@ -295,14 +303,15 @@ body.dark .switch::before{
     left: 250px;
     height: 100vh;
     width: calc(100% - 250px);
-    background-color: var(--body-color);
-    transition: var(--tran-05);
+    background-color: var(--third-color);
+    transition: var(--transition2);
 }
 .home .text{
     font-size: 30px;
     font-weight: 500;
-    color: var(--text-color);
-    padding: 12px 60px;
+    color: var(--fifth-color);
+    padding-left: 2rem;
+    padding-top: 1rem
 }
 
 .sidebar.close ~ .home{
@@ -311,5 +320,85 @@ body.dark .switch::before{
     width: calc(100% - 78px);
 }
 body.dark .home .text{
-    color: var(--text-color);
+    color: var(--fifth-color);
+}
+
+/* sections */
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.shop{
+    margin-top: 10px;
+    padding-top: 0px
+}
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,auto));
+    gap: 1.5rem;
+}
+
+@media(max-width:768px){
+    
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1.5rem;
+}
+
+}
+
+.product-box{
+    position: relative;
+    min-width: 200px;
+    transition: var(--transition2);
+}
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid var(--forth-color);
+    transition: var(--transition2);
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    transition: var(--transition2);
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 500;
+}
+.add-cart{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--forth-color);
+    color: var(--sec-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background: var(--main-color);
+    transition: var(--transition2);
+}
+
+.Dash-item h3
+{
+    color: var(--fifth-color);
+}
+
+.Dash-item a {
+    border-radius: 25px;
+    transition: all 0.5s;
+    color: var(--fifth-color);
 }
