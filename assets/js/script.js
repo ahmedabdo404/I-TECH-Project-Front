@@ -31,3 +31,14 @@ let counter = setInterval(() => {
         alert("Offer has been ended")
     }
 }, 1000)
+
+
+var options = {
+    strings: ['All Tech ... in one place'],
+    typeSpeed: 100,
+    loop: true,
+    loopCount: Infinity,
+    showCursor:false,
+    backSpeed: 100
+};
+var typed = new Typed('.element', options);

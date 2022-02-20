@@ -155,31 +155,13 @@ header a:active {
 }
 
 /* body ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>body */
-.h{
-    background-color: var(--main-color);
-    color: var(--sec-color);
-    padding: 0 1% !important;
-    margin: 0 !important;
+
+img{
+    width: 100%;
 }
 
-.catogery-list{
-    cursor: pointer;
-}
-.catogery-list:hover{
-    color:var(--main-color);
-}
-.catogery-list-active{
-    color:var(--main-color);
-}
-
-.form-check-input:checked{
-    background-color:var(--main-color);
-    border-color:var(--main-color);
-}
-
-.accordion-button:not(.collapsed){
-    color:var(--main-color);
-    background-color:var(--sec-color);
+.c{
+    color: var(--main-color);
 }
 
 /* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/
