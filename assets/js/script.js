@@ -52,7 +52,6 @@ var options = {
 };
 var typed = new Typed('.element', options);
 
-
 // back to top
 let upBtn = document.querySelector(".back-top")
 
