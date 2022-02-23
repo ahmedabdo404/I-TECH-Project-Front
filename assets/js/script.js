@@ -2,9 +2,6 @@
 let menu = document.querySelector('#menu-bar i')
 let navbar = document.querySelector('.top-nav')
 
-
-
-
 menu.onclick = function () {
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
@@ -25,6 +22,8 @@ window.onscroll = () => {
 upBtn.onclick = () => {
     scrollTo({ top: 0, behavior: "smooth" });
 }
+
+//
 
 // countdown timer
 let daysDiv = document.querySelector(".days")
