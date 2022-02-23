@@ -79,3 +79,21 @@ window.onload = () => {
         //l.setAttribute("asp-action", "details");
         l.setAttribute("href", "sub.html");
 }
+
+$( function() {
+    var availableTags = [
+        "mobile1",
+        "mobile2",
+        "mobile3",
+        "iphone",
+        "laptop1",
+        "laptop2",
+        "laptop3",
+        "laptop4",
+        "accessories mobiles",
+        "accessories laptops"
+    ];
+    $( "#tags" ).autocomplete({
+        source: availableTags
+    });
+} );
