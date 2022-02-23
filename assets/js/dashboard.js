@@ -21,6 +21,5 @@ if(body.classList.contains("dark")){
     modeText.innerText = "Light mode";
 }else{
     modeText.innerText = "Dark mode";
-    
 }
 });

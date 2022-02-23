@@ -242,14 +242,124 @@ header a:active {
     color: var(--sec-color)
 }
 
-
-/* body ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>body*/
-
-.contact-c {
-    margin-top: 5%;
+/*currnet page*/
+.top-nav li a {
+    color: var(--sec-color) !important;
 }
 
-.h{
+.top-nav li:nth-child(4) a {
+    color: var(--main-color) !important;
+}
+
+.current-page {
+    width: 93px;
+    height: 200px;
+    background-color: var(--sec-color);
+    display: inline-block;
+    position: absolute;
+    margin-left: 245px;
+    margin-top: -160px;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+/* Shop Content */
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.shop{
+    margin-top: 4%;
+    padding-top: 0px
+}
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1.5rem;
+}
+
+.product-box{
+    position: relative;
+    min-width: 200px;
+    transition: var(--transition2);
+}
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid var(--forth-color);
+    transition: var(--transition2);
+}
+
+.product-img{
+    width: 100%;
+    max-height: auto;
+    margin-bottom: 0.5rem;
+    transition: var(--transition2);
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 500;
+}
+.add-cart{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--forth-color);
+    color: var(--sec-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background: var(--main-color);
+    transition: var(--transition2);
+}
+/* filter ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>filter*/
+
+.filter {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 390px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--sec-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% /10%);
+    transition: var(--transition2);
+    z-index: 5;
+    overflow-y: scroll;
+}
+
+.filter.active {
+    right: 0;
+}
+
+.filter-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+#close-filter {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--forth-color);
+    cursor: pointer;
+}
+
+
+/*filter*/
+.h {
+    min-width:10rem;
     background-color: var(--main-color);
     color: var(--sec-color);
     padding: 0 0.5rem;
@@ -257,12 +367,7 @@ header a:active {
 }
 
 
-.login-inputs input
-{
-    margin-bottom: 1rem;
-}
-
-.b{
+.b {
     padding: 0.4rem 0.8rem;
     color: var(--sec-color);
     background-color: var(--main-color);
@@ -270,7 +375,37 @@ header a:active {
     border-radius: 5px;
 }
 
-/* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/
+.catogery-list {
+    cursor: pointer;
+}
+
+.catogery-list:hover {
+    color: var(--main-color);
+}
+
+.catogery-list-active {
+    color: var(--main-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.brand {
+    padding: .5rem 1rem;
+}
+
+li i.bx.bxs-right-arrow {
+    font-size: 12px;
+}
+
+.list-group li {
+    min-width: 11rem;
+}
+
+
+/* footer */
 #footer {
     position: relative;
     bottom: 0;
