@@ -293,7 +293,8 @@ header a:active {
 
 .product-img{
     width: 100%;
-    max-height: auto;
+    height: 300px;
+    object-fit: cover;
     margin-bottom: 0.5rem;
     transition: var(--transition2);
 }
@@ -522,4 +523,19 @@ li i.bx.bxs-right-arrow {
     background: var(--sixth-color);
     color: #fff;
     text-decoration: none;
+}
+
+.btn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary{
+    background-color: #fff !important;
+    border: none !important;
+}
+
+.btn-primary:hover{
+    background-color: #f5a30a !important;
+    color: #FFF !important;
 }

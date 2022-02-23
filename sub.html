@@ -141,80 +141,93 @@
     <!-- Shop -->
     <section class="shop container mb-3">
         <a class="btn btn-warning filterbtn mt-5">Filter</a>
+        <div class="row mt-3 mb-4 button-group filter-button-group">
+            <div class="col d-flex justify-content-center">
+                <button type="button" data-filter="*" class="btn btn-primary mx-1 text-dark" >All</button>
+                <button type="button" data-filter=".mobiles" class="btn btn-primary mx-1 text-dark" >mobiles</button>
+                <button type="button" data-filter=".Laptops" class="btn btn-primary mx-1 text-dark" >Laptops</button>
+                <button type="button" data-filter=".accessories" class="btn btn-primary mx-1 text-dark" >accessories</button>
+                <button type="button" data-filter=".lessprice" class="btn btn-primary mx-1 text-dark" >less price</button>
+                <button type="button" data-filter=".highprice" class="btn btn-primary mx-1 text-dark" >high price</button>
+            </div>
+    
+        </div>
         <h2 class="section-title"> Shop Products</h2>
         <!-- Content -->
         <div class="shop-content">
             <!-- Box 2 -->
-            <div class="product-box">
+            <div class = " row justify-content-center g-4" id = "product-list">
+            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
                 <a class="p-link"><img src="assets/imgs/carts/14.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title">Smart Phone error</h2>
                 <span class="price">$25</span>
             </div>
             <!-- Box 3 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
                 <a class="p-link"><img src="assets/imgs/carts/17.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title">Smart Phone1</h2>
                 <span class="price">$25</span>
             </div>
             <!-- Box 4 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
                 <a class="p-link"><img src="assets/imgs/carts/12.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title">Smart Phone2</h2>
                 <span class="price">$15</span>
             </div>
             <!-- Box 7 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
                 <a class="p-link"><img src="assets/imgs/carts/5.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title">Smart Phone3</h2>
                 <span class="price">$30</span>
             </div>
             <!-- Box 5 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
                 <a class="p-link"><img src="assets/imgs/carts/20.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title">Laptop</h2>
                 <span class="price">$100</span>
             </div>
             <!-- Box 1 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
                 <a class="p-link"><img src="assets/imgs/carts/23.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title">Laptop1</h2>
                 <span class="price">$85</span>
             </div>
             <!-- Box 6 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
                 <a class="p-link"><img src="assets/imgs/carts/10.jpg" alt="" class="product-img"></a>
                 <h2 class="product-title">Laptop2</h2>
                 <span class="price">$50</span>
             </div>
             <!-- Box 9 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
                 <a class="p-link"><img src="assets/imgs/carts/22.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title">Laptop5</h2>
                 <span class="price">$85</span>
             </div>
             <!-- Box 10 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 accessories lessprice">
                 <a class="p-link"><img src="assets/imgs/carts/1.jpg" alt="" class="product-img"></a>
                 <h2 class="product-title">st</h2>
                 <span class="price">$10</span>
             </div>
             <!-- Box 11 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 accessories lessprice">
                 <a class="p-link"><img src="assets/imgs/carts/3.jpg" alt="" class="product-img"></a>
                 <h2 class="product-title">Fmemory</h2>
                 <span class="price">$20</span>
             </div>
             <!-- Box 12 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 accessories lessprice">
                 <a class="p-link"><img src="assets/imgs/carts/4.jpg" alt="" class="product-img"></a>
                 <h2 class="product-title">Screen</h2>
                 <span class="price">$15</span>
             </div>
             <!-- Box 13 -->
-            <div class="product-box">
+            <div class="product-box col-lg-4 col-md-6 accessories highprice">
                 <a class="p-link"><img src="assets/imgs/carts/13.jpg" alt="" class="product-img"></a>
                 <h2 class="product-title">watch</h2>
                 <span class="price">$50</span>
+            </div>
             </div>
         </div>
     </section>
@@ -288,6 +301,7 @@
         crossorigin="anonymous"></script>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="assets/js/sub.js"></script>
 </body>
 
