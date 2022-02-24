@@ -25,15 +25,13 @@ upBtn.onclick = () => {
 
 //
 
-
-
+// add links to products
 let productslink = document.querySelectorAll(".p-link");
 
-// add links to products
 window.onload = () => {
     for(let l of productslink)
         //l.setAttribute("asp-action", "details");
-        l.setAttribute("href", "details.html");
+        l.setAttribute("href", "details");
 }
 
 $('.catogery-list').click(function () {
@@ -59,7 +57,7 @@ closeFilter.onclick = () => {
     console.log("close");
 };
 
-// init Isotope
+// filters
 var $grid = $('#product-list').isotope({
     // options
 });

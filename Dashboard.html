@@ -16,117 +16,113 @@
 </head>
 
 <body>
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="logo.png" alt="">
-                </span>
-
-                <div class="text logo-text">
-                    <span class="name">I-Tech</span>
-                    <span class="profession">All Tech ... in one place</span>
-                </div>
-            </div>
-
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
+    <header class="login-header">
+        <nav class="container">
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="dashboard.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Dashboard</span>
+                    </a>
                 </li>
 
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text">Dashboard</span>
-                        </a>
-                    </li>
+                <li class="nav-link">
+                    <a href="cart.html">
+                        <i class='bx bx-bar-chart-alt-2 icon'></i>
+                        <span class="text nav-text">Cart</span>
+                    </a>
+                </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon'></i>
-                            <span class="text nav-text">Items</span>
-                        </a>
-                    </li>
+                <li class="nav-link">
+                    <a href="orders.html">
+                        <i class='bx bx-bell icon'></i>
+                        <span class="text nav-text">Orders</span>
+                    </a>
+                </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Orders</span>
-                        </a>
-                    </li>
+                <li class="nav-link">
+                    <a href="index.html">
+                        <i class='bx bx-pie-chart-alt icon'></i>
+                        <span class="text nav-text">Statitics</span>
+                    </a>
+                </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-pie-chart-alt icon'></i>
-                            <span class="text nav-text">Statitics</span>
-                        </a>
-                    </li>
+                <li class="nav-link">
+                    <a href="sub.html">
+                        <i class='bx bx-cart icon'></i>
+                        <span class="text nav-text">Shop</span>
+                    </a>
+                </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-cart icon'></i>
-                            <span class="text nav-text">Shop</span>
-                        </a>
-                    </li>
+                <li class="nav-link">
+                    <a href="about.html">
+                        <i class='bx bx-info-circle icon'></i>
+                        <span class="text nav-text">About</span>
+                    </a>
+                </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-info-circle icon'></i>
-                            <span class="text nav-text">About</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-support icon'></i>
-                            <span class="text nav-text">Contact</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-                <li class="">
+                <li class="nav-link">
+                    <a href="contact.html">
+                        <i class='bx bx-support icon'></i>
+                        <span class="text nav-text">Contact</span>
+                    </a>
+                </li>
+                <li class="nav-link">
                     <a href="index.html">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
+            </ul>
+            <div id="menu-bar"><i class='bx bx-menu'></i></div>
+            </nav>
+        <section class="items-section">
+            <div class="items-bar container">
+                <p> I-TECH</p>
+                <div class="search-bar d-flex justify-content-center align-items-center">
+                    <input type="text" placeholder="Search your item">
+                    <div class="Search-icon">
+                        <i class='bx bx-search-alt-2'></i>
                     </div>
-                    <span class="mode-text text">Dark mode</span>
+                </div>
+                <div class="btn-group account">
+                    <p type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                        Account
+                    </p>
+                    <ul class="dropdown-menu dropdown-menu-center">
+                        <a href="login.html">
+                            <li><button class="dropdown-item" type="button">Sign In</button></li>
+                        </a>
+                        <a href="login.html">
+                            <li><button class="dropdown-item" type="button">Account</button></li>
+                        </a>
 
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-
+                        <a href="orders.html">
+                            <li><button class="dropdown-item" type="button">Orders</button></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <i class='bx bx-cart'></i>
+                    </a>
+                </div>
             </div>
+        </section>
+        <!-- back to top icon -->
+        <div class="back-top">
+            <i class='bx bx-up-arrow-alt'></i>
         </div>
+    </header>
 
-    </nav>
-
-    <section class="home">
-        <div class="text">Dashboard</div>
-        <div class="shop-content p-4">
+    <section class="home p-4">
+        <div class="shop-content container">
             <!-- Box 2 -->
             <div class="product-box">
                 <img src="assets\imgs\dashboard/events-2.jpg" class="product-img" alt="...">
                 <div class="Dash-item">
                     <div class="d-flex align-items-center mb-3 mt-3">
-                        <h3 class="me-3">Show my Items</h3>
+                        <h4 class="me-3">Show my Items</h4>
                         <a class="btn btn-outline-warning">Items</a>
                     </div>
 
@@ -137,7 +133,7 @@
                 <img src="assets\imgs\dashboard/events-1.jpg" class="product-img" alt="...">
                 <div class="Dash-item">
                     <div class="d-flex align-items-center mb-3 mt-3">
-                        <h3 class="me-3">Show My orders:</h3>
+                        <h4 class="me-3">Show My orders:</h4>
                         <a class="btn btn-outline-warning">orders</a>
                     </div>
                 </div>
@@ -148,7 +144,7 @@
                     <img src="assets\imgs\dashboard/course-2.jpg" class="product-img" alt="...">
                     <div class="Dash-item">
                         <div class="d-flex align-items-center mb-3 mt-3">
-                            <h3 class="me-3">Show My Statistics:</h3>
+                            <h4 class="me-3">Show My Statistics:</h4>
                             <a class="btn btn-outline-warning">Statistics</a>
                         </div>
                     </div>
@@ -160,7 +156,7 @@
                     <img src="assets\imgs\dashboard/course-1.jpg" class="product-img" alt="...">
                     <div class="Dash-item">
                         <div class="d-flex align-items-center mb-3 mt-3">
-                            <h3 class="me-3">Show Tracks Data:</h3>
+                            <h4 class="me-3">Show Tracks Data:</h4>
                             <a class="btn btn-outline-warning">Tracks</a>
                         </div>
                     </div>
@@ -171,7 +167,7 @@
                 <img src="assets\imgs\dashboard/about.jpg" class="product-img" alt="...">
                 <div class="Dash-item">
                     <div class="d-flex align-items-center mb-3 mt-3">
-                        <h3 class="me-3">About our Team:</h3>
+                        <h4 class="me-3">About our Team:</h4>
                         <a class="btn btn-outline-warning">About</a>
                     </div>
                 </div>
@@ -181,16 +177,83 @@
                 <img src="assets\imgs\dashboard/course-3.jpg" class="product-img" alt="...">
                 <div class="Dash-item">
                     <div class="d-flex align-items-center mb-3 mt-3">
-                        <h3 class="me-3">Contact us:</h3>
+                        <h4 class="me-3">Contact us:</h4>
                         <a class="btn btn-outline-warning">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
+    <!-- footer -->
 
+    <footer id="footer" class="border-top footer text-muted">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Privacy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>MY Account</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="cart.html">My Cart</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="orders.html">Orders</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Help</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>I-TECH</h3>
+                        <p>
+                            ITI Menofia Branch <br>
+                            Menofia, Shebin Elkom<br>
+                            Egypt <br><br>
+                            <strong>Phone:</strong> +20 1114474365<br>
+                            <strong>Email:</strong> ahmed.elzahed404@gmail.com<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4 inner-footer">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span> I-TECH
+                        </span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
+                        Team</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
+
 
 </body>
 
