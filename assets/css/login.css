@@ -241,6 +241,8 @@ header a:active {
     font-size: 40px;
     color: var(--sec-color)
 }
+
+
 /*currnet page*/
 .top-nav li a{
     color: var(--sec-color) !important;
@@ -264,7 +266,7 @@ header a:active {
 
 /* body ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>body*/
 .login-c {
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 .h {
@@ -272,11 +274,6 @@ header a:active {
     color: var(--sec-color);
     padding: 0 0.5rem;
     margin: 0
-}
-
-#SELLER,
-#BUYER {
-    accent-color: brown;
 }
 
 .b{

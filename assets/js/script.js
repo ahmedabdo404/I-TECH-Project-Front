@@ -1,11 +1,12 @@
 // hide nav bar
 let menu = document.querySelector('#menu-bar i')
-let navbar = document.querySelector('.top-nav')
+let navbar = document.querySelector('.top-nav, .menu-links')
 
 menu.onclick = function () {
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
 }
+
 
 // back to top
 let upBtn = document.querySelector(".back-top")
@@ -59,9 +60,9 @@ let counter = setInterval(() => {
     }
 }, 1000)
 
-//animation
+//type animation
 var options = {
-    strings: ['All Tech ... in one place'],
+    strings: ['Any tech you need', 'Any Laptops','Any Mobile phones', 'Any Accessories', 'All Tech ... in one place'],
     typeSpeed: 100,
     loop: true,
     loopCount: Infinity,
