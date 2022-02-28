@@ -18,21 +18,21 @@
 
 <body>
     <header>
-        <nav class="container">
+        <nav class="container d-flex flex-row justify-content-between">
+            <a href="index.html" class="I-tech-logo"><p> I-TECH</p></a>
             <ul class="top-nav">
                 <div class="current-page"></div>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">My Account</a></li>
-                <li> <a href="sub.html">Shopping</a></li>
+                <li><a href="sub.html">Shopping</a></li>
                 <li><a href="Checkout.html">Checkout</a></li>
             </ul>
             <div id="menu-bar"><i class='bx bx-menu'></i></div>
         </nav>
         <section class="items-section">
             <div class="items-bar container">
-                <p> I-TECH</p>
                 <div class="search-bar d-flex justify-content-center align-items-center">
-                    <input type="text" placeholder="Search your item">
+                    <input type="text" placeholder="Search your item" id="tags">
                     <div class="Search-icon">
                         <i class='bx bx-search-alt-2'></i>
                     </div>
@@ -76,8 +76,8 @@
                 <div class="col-12">
                     <h6>Login OR Register anew account</h6>
                     <hr>
-                    <div class="row border p-4 m-4 d-flex flex-row">
-                        <form class="col-5" action="Dashboard.html" method="get">
+                    <div class="row border p-1 m-4 d-flex flex-column flex-lg-row justify-content-center">
+                        <form class="col-12 mb-3 col-lg-5 ps-0" action="Dashboard.html" method="get">
                             <h5>Sign in</h5>
                             <P>Log in to my account</P>
                             <div class="d-flex flex-row login-inputs">
@@ -85,36 +85,36 @@
                                     <label for="username">Email</label>
                                     <label for="password">Pass</label>
                                 </div>
-                                <div class="d-inline-flex flex-column col-7">
+                                <div class="d-inline-flex flex-column col-8">
                                     <input type="text" id="username">
                                     <input type="password" id="password">
                                 </div>
                             </div>
                             <br>
                             <a href="forgetPassword.html">Forgot your password?</a>
-                            <input type="submit" value="LOG IN" class="ms-3 b">
+                            <input type="submit" value="LOG IN" class="b mt-3 ms-lg-3 mt-lg-0 ">
                         </form>
-                        <div class="col-2 align-self-center"><h6>Or</h6></div>
-                        <div class="col-5 align-self-center">
-                            <a href="signup.html"></a>
-                                <p>Creat anew Account on I-Tech</p>
-                                <input type="button" value="Sign Up" class="b">
+                        <div class="col-1 align-self-center d-none d-lg-flex"><div class="v-line"></div></div>
+                        <div class="col-12 mt-3 col-lg-5 d-flex flex-column justify-content-evenly p-0">
+                            <div>
+                                <h5>Sign UP</h5>
+                                <P>Sign up on My tech platform</P>
+                            </div>
+                            <a href="signup.html" class="mt-3"><input type="button" value="Sign Up" class="b"></a>
                         </div>
-
                     </div>
     
                 </div>
             </div>
         </div>
     </section>
-
     <!-- footer -->
     <footer id="footer" class="border-top footer text-muted">
 
         <div class="footer-top">
             <div class="container">
-                <div class="row justify-content-evenly">
-                    <div class="col-lg-2 col-md-6 footer-links">
+                <div class="row d-flex flex-row justify-content-md-center footer-sections">
+                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
                         <h4>Information</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
@@ -125,7 +125,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links">
+                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
                         <h4>MY Account</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
@@ -135,7 +135,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-contact">
+                    <div class="col-lg-3 col-md-3 col-sm-3 footer-contact text-wrap">
                         <h3>I-TECH</h3>
                         <p>
                             ITI Menofia Branch <br>
@@ -149,7 +149,7 @@
             </div>
         </div>
 
-        <div class="container d-md-flex py-4 inner-footer">
+        <div class="container d-md-flex p-0 pb-3 pt-3 inner-footer text-wrap">
 
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">

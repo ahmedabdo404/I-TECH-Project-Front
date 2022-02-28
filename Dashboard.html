@@ -75,44 +75,43 @@
                 </li>
             </ul>
             <div id="menu-bar"><i class='bx bx-menu'></i></div>
-        </nav>
-        <section class="items-section">
-            <div class="items-bar container">
-                <p> I-TECH</p>
-                <div class="search-bar d-flex justify-content-center align-items-center">
-                    <input type="text" placeholder="Search your item">
-                    <div class="Search-icon">
-                        <i class='bx bx-search-alt-2'></i>
+            </nav>
+            <section class="items-section">
+                <div class="items-bar container">
+                    <div class="search-bar d-flex justify-content-center align-items-center">
+                        <input type="text" placeholder="Search your item" id="tags">
+                        <div class="Search-icon">
+                            <i class='bx bx-search-alt-2'></i>
+                        </div>
+                    </div>
+                    <div class="btn-group account">
+                        <p type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </p>
+                        <ul class="dropdown-menu dropdown-menu-center">
+                            <a href="login.html">
+                                <li><button class="dropdown-item" type="button">Sign In</button></li>
+                            </a>
+                            <a href="login.html">
+                                <li><button class="dropdown-item" type="button">Account</button></li>
+                            </a>
+    
+                            <a href="orders.html">
+                                <li><button class="dropdown-item" type="button">Orders</button></li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="cart-icon">
+                        <a href="cart.html">
+                            <i class='bx bx-cart'></i>
+                        </a>
                     </div>
                 </div>
-                <div class="btn-group account">
-                    <p type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                    </p>
-                    <ul class="dropdown-menu dropdown-menu-center">
-                        <a href="login.html">
-                            <li><button class="dropdown-item" type="button">Sign In</button></li>
-                        </a>
-                        <a href="login.html">
-                            <li><button class="dropdown-item" type="button">Account</button></li>
-                        </a>
-
-                        <a href="orders.html">
-                            <li><button class="dropdown-item" type="button">Orders</button></li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="cart-icon">
-                    <a href="cart.html">
-                        <i class='bx bx-cart'></i>
-                    </a>
-                </div>
+            </section>
+            <!-- back to top icon -->
+            <div class="back-top">
+                <i class='bx bx-up-arrow-alt'></i>
             </div>
-        </section>
-        <!-- back to top icon -->
-        <div class="back-top">
-            <i class='bx bx-up-arrow-alt'></i>
-        </div>
     </header>
 
     <section class="home p-4">
@@ -184,14 +183,15 @@
             </div>
         </div>
     </section>
-    <!-- footer -->
 
+
+    <!-- footer -->
     <footer id="footer" class="border-top footer text-muted">
 
         <div class="footer-top">
             <div class="container">
-                <div class="row justify-content-evenly">
-                    <div class="col-lg-2 col-md-6 footer-links">
+                <div class="row d-flex flex-row justify-content-md-center footer-sections">
+                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
                         <h4>Information</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
@@ -202,7 +202,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links">
+                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
                         <h4>MY Account</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
@@ -212,7 +212,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-contact">
+                    <div class="col-lg-3 col-md-3 col-sm-3 footer-contact text-wrap">
                         <h3>I-TECH</h3>
                         <p>
                             ITI Menofia Branch <br>
@@ -226,7 +226,7 @@
             </div>
         </div>
 
-        <div class="container d-md-flex py-4 inner-footer">
+        <div class="container d-md-flex p-0 pb-3 pt-3 inner-footer text-wrap">
 
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
