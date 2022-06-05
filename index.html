@@ -18,7 +18,9 @@
 <body>
     <header>
         <nav class="container d-flex flex-row justify-content-between">
-            <a href="index.html" class="I-tech-logo"><p> I-TECH</p></a>
+            <a href="index.html" class="I-tech-logo">
+                <p> I-TECH</p>
+            </a>
             <ul class="top-nav">
                 <div class="current-page"></div>
                 <li><a href="index.html">Home</a></li>
@@ -154,28 +156,52 @@
 
     <!-- category -->
     <section class="shop container mb-4">
-
+        <!-- Content -->
         <h2 class="section-title"> Choose Your category</h2>
         <div class="shop-content">
 
+            <!-- Box 1 -->
             <div class="product-box">
-                <a class="p-link" href="sub.html"><img src="assets/imgs/carts/12.jpeg" alt=""
-                        class="product-img"></a>
+                <a class="p-link" href="sub.html?Filter=Mobiles">
+                    <img src="assets/imgs/carts/12.jpeg" alt="" class="product-img">
+                </a>
                 <h2 class="product-title text-center">Phones</h2>
             </div>
-
+            <!-- Box 2 -->
             <div class="product-box">
-                <a class="p-link" href="sub.html"><img src="assets/imgs/carts/8.jpeg" alt="" class="product-img"></a>
+                <a class="p-link" href="sub.html?Filter=Laptops">
+                    <img src="assets/imgs/carts/8.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title text-center">Laptops</h2>
             </div>
-
+            <!-- Box 3 -->
             <div class="product-box">
-                <a class="p-link" href="sub.html"><img src="assets/imgs/carts/5.jpeg" alt="" class="product-img"></a>
+                <a class="p-link" href="sub.html?Filter=Accessories">
+                    <img src="assets/imgs/carts/5.jpeg" alt="" class="product-img"></a>
                 <h2 class="product-title text-center">Accessories</h2>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <a class="p-link" href="sub.html?Filter=Accessories">
+                    <img src="assets/imgs/carts/4.jpg" alt="" class="product-img">
+                </a>
+                <h2 class="product-title text-center">Covers</h2>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <a class="p-link" href="sub.html?Filter=Accessories">
+                    <img src="assets/imgs/carts/5.jpg" alt="" class="product-img"></a>
+                <h2 class="product-title text-center">Hand Frees</h2>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <a class="p-link" href="sub.html?Filter=All">
+                    <img src="assets/imgs/carts/11.jpg" alt="" class="product-img"></a>
+                <h2 class="product-title text-center">And more</h2>
             </div>
         </div>
     </section>
 
+    <!-- offer -->
     <section class="offer container">
         <div class="sec1">
             <div class="discount">
@@ -199,26 +225,106 @@
             </div>
         </div>
     </section>
-
+    <!-- Join-us -->
     <section class="Join-us">
         <div>
+            <div class="d-none sentDiv text-center">
+                We will send the lastest offers to:
+            </div>
             <h1>Subscribe now to get offers updates</h1>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <div class="d-flex flex-row justify-content-center">
-                <input type="text" placeholder="Enter your E-mail">
-                <button type="button" class="btn btn-warning"
-                    style="border-radius: 5px; transition: all 0.5s;">Subscribe</button>
+            <form class="d-flex flex-row justify-content-center" asp-action="index">
+                <input type="email" placeholder="Enter your E-mail">
+                <button type="submit" class="btn btn-warning" style="border-radius: 5px; transition: all 0.5s;">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="icon-box">
+                        <a href="sub.html">
+                            <img src="https://img.icons8.com/color/48/000000/hp.png" />
+                            <h3 class="d-inline">Hp</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <a href="sub.html">
+                            <img src="https://img.icons8.com/color/48/000000/dell--v1.png" />
+                            <h3 class="d-inline">Dell</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box"><a href="sub.html">
+                            <img
+                                src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo.png" />
+                            <h3 class="d-inline">Huawei</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <a href="sub.html">
+                            <img src="https://img.icons8.com/fluency-systems-filled/48/000000/mac-os.png" />
+                            <h3 class="d-inline">Apple</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box">
+                        <a href="sub.html">
+                            <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                            <img src="https://logo-logos.com/2016/10/Oppo_logo.png"
+                                alt="Oppo logo" width="48" />
+                            <h3 class="d-inline">Oppo</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box">
+                        <a href="sub.html">
+                            <img src="https://img.icons8.com/color/50/000000/xiaomi.png" alt="" />
+                            <h3 class="d-inline">Xiaomi</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box">
+                        <a href="sub.html">
+                            <img src="https://logowik.com/content/uploads/images/181_acer.jpg" alt="" width="66" />
+                            <h3 class="d-inline">Acer</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box">
+                        <a href="sub.html">
+                            <img src="https://img.icons8.com/color/48/000000/samsung.png" alt="" />
+                            <h3 class="d-inline">Samsung</h3>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- footer -->
     <footer id="footer" class="border-top footer text-muted">
 
         <div class="footer-top">
             <div class="container">
-                <div class="row d-flex flex-row justify-content-md-center footer-sections">
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-around justify-content-md-evenly footer-sections">
+                    <div class=" footer-links">
                         <h4>Information</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
@@ -229,7 +335,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                    <div class=" footer-links">
                         <h4>MY Account</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
@@ -239,7 +345,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-contact text-wrap">
+                    <div class=" footer-contact text-wrap">
                         <h3>I-TECH</h3>
                         <p>
                             ITI Menofia Branch <br>
@@ -253,24 +359,26 @@
             </div>
         </div>
 
-        <div class="container d-md-flex p-0 pb-3 pt-3 inner-footer text-wrap">
+        <div class="inner-footer">
+            <div class="container text-wrap d-md-flex pt-3 pb-3">
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span> I-TECH
+                            </span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
+                            Team</a>
+                    </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
 
-            <div class="me-md-auto text-center text-md-start">
-                <div class="copyright">
-                    &copy; Copyright <strong><span> I-TECH
-                        </span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
-                        Team</a>
-                </div>
-            </div>
-            <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>

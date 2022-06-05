@@ -66,90 +66,80 @@
         </div>
     </header>
 
+
     <section>
         <div class="filter">
-            <h2 class="filter-title">Filter</h2>
-            <!-- Content -->
-            <div class="col-4">
-                <p class="h">CATEGORY</p>
-                <ul class="list-group">
-                    <li class="list-group-item border-0 catogery-list catogery-list-active"><i
-                            class='bx bxs-right-arrow pe-2'></i>Smart Phone</li>
-                    <li class="list-group-item border-0 catogery-list"><i
-                            class='bx bxs-right-arrow pe-2'></i>Desktop</li>
-                    <li class="list-group-item border-0 catogery-list"><i class="bx bxs-right-arrow pe-2"></i>Laptop
-                    </li>
-                    <li class="list-group-item border-0 catogery-list"><i
-                            class='bx bxs-right-arrow pe-2'></i>Accessories</li>
-                </ul>
-                <p class="h">By Brand</p>
+            <div class="other-filter-group">
+                <p class="h">Popular Brands</p>
                 <div class="brand">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="HP" checked>
-                        <label class="form-check-label" for="HP">
-                            HP
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="DELL">
-                        <label class="form-check-label" for="DELL">
-                            DELL
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="APPLE">
-                        <label class="form-check-label" for="APPLE">
-                            APPLE
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="ASUS">
-                        <label class="form-check-label" for="ASUS">
-                            ASUS
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="SUMSUNG">
-                        <label class="form-check-label" for="SUMSUNG">
-                            SUMSUNG
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="TOSHIBA">
-                        <label class="form-check-label" for="TOSHIBA">
-                            TOSHIBA
-                        </label>
-                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 catogery-list " data-filter=".Hp">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Hp
+                        </li>
+                        <li class="list-group-item border-0 catogery-list " data-filter=".Dell">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Dell
+                        </li>
+                        <li class="list-group-item border-0 catogery-list " data-filter=".Mac">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Mac
+                        </li>
+                        <li class="list-group-item border-0 catogery-list " data-filter=".Acer">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Acer
+                        </li>
+                        <li class="list-group-item border-0 catogery-list" data-filter=".Samsung">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Samsung
+                        </li>
+                        <li class="list-group-item border-0 catogery-list" data-filter=".Huawei">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Huawei
+                        </li>
+                        <li class="list-group-item border-0 catogery-list" data-filter=".IPhone">
+                            <i class='bx bxs-right-arrow pe-2 '></i>IPhone
+                        </li>
+                        <li class="list-group-item border-0 catogery-list" data-filter=".Oppo">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Oppo
+                        </li>
+                        <li class="list-group-item border-0 catogery-list" data-filter=".Realme">
+                            <i class='bx bxs-right-arrow pe-2 '></i>Realme
+                        </li>
+                        <li class="list-group-item border-0 catogery-list" data-filter=".xiaomi">
+                            <i class='bx bxs-right-arrow pe-2 '></i>xiaomi
+                        </li>
+                    </ul>
                 </div>
-                <p class="h">By Price</p>
+
+                <p class="h">Price</p>
                 <ul class="list-group">
-                    <li class="list-group-item border-0 catogery-list"><i
-                            class='bx bxs-right-arrow pe-2'></i>$1000-$2000</li>
-                    <li class="list-group-item border-0 catogery-list"><i
-                            class='bx bxs-right-arrow pe-2'></i>$2000-$3000</li>
-                    <li class="list-group-item border-0 catogery-list"><i
-                            class='bx bxs-right-arrow pe-2'></i>$3000-$4000</li>
-                    <li class="list-group-item border-0 catogery-list"><i
-                            class='bx bxs-right-arrow pe-2'></i>$4000-$5000</li>
-                    <li class="list-group-item border-0 catogery-list "><i
-                            class='bx bxs-right-arrow pe-2'></i>$5000-$6000</li>
+                    <li class="list-group-item border-0 catogery-list" data-filter=".from-0to100">
+                        <i class='bx bxs-right-arrow pe-2'></i>$0-$100
+                    </li>
+                    <li class="list-group-item border-0 catogery-list " data-filter=".from-100to500">
+                        <i class='bx bxs-right-arrow pe-2'></i>$100-$500
+                    </li>
+                    <li class="list-group-item border-0 catogery-list " data-filter=".from-500to1000">
+                        <i class='bx bxs-right-arrow pe-2'></i>$500-$1000
+                    </li>
+                    <li class="list-group-item border-0 catogery-list" data-filter=".from-1000to5000">
+                        <i class='bx bxs-right-arrow pe-2 '></i>$1000-$5000
+                    </li>
+                    <li class="list-group-item border-0 catogery-list" data-filter=".from-5000to15000">
+                        <i class='bx bxs-right-arrow pe-2'></i>$5000-$15000
+                    </li>
+                    <li class="list-group-item border-0 catogery-list" data-filter=".More-than15000">
+                        <i class='bx bxs-right-arrow pe-2'></i>$15000-<span style="font-size: 25px">&#8734;</span>
+                    </li>
                 </ul>
             </div>
-            <!-- Cart Close -->
-            <i class='bx bx-x' id="close-filter"></i>
+            <i class='bx bx-x' id="close-f"></i>
         </div>
     </section>
-    
+
     <!-- Shop -->
-    <section class="shop container mb-3">
-        <div class="row mt-3 mb-3 button-group filter-button-group">
-            <div class="col d-flex justify-content-center flex-wrap">
-                <button type="button" data-filter="*" class="btn mx-1">All</button>
-                <button type="button" data-filter=".mobiles" class="btn mx-1">mobiles</button>
-                <button type="button" data-filter=".Laptops" class="btn mx-1">Laptops</button>
-                <button type="button" data-filter=".accessories" class="btn mx-1">accessories</button>
-                <button type="button" data-filter=".lessprice" class="btn mx-1">less price</button>
-                <button type="button" data-filter=".highprice" class="btn mx-1">high price</button>
+    <section class="shop mb-5 ps-2 pe-2 ps-md-4 pe-md-4 ms-2 me-2">
+        <div class="row mt-3 mb-3 button-group filter-button-group flex-wrap">
+            <div class="d-flex justify-content-center flex-wrap">
+                <button type="button" data-filter="*" class="btn mx-1 catogery-list">All</button>
+                <button type="button" data-filter=".mobiles" class="btn mx-1 catogery-list">mobiles</button>
+                <button type="button" data-filter=".Laptops" class="btn mx-1 catogery-list">Laptops</button>
+                <button type="button" data-filter=".accessories" class="btn mx-1 catogery-list">accessories</button>
                 <button class="filterbtn btn mx-1">More Filters</button>
             </div>
         </div>
@@ -157,90 +147,103 @@
         <!-- Content -->
         <div class="shop-content">
             <!-- Box 2 -->
-            <div class = " row justify-content-center g-4" id = "product-list">
-            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
-                <a class="p-link"><img src="assets/imgs/carts/14.jpeg" alt="" class="product-img"></a>
-                <h2 class="product-title">Smart Phone error</h2>
-                <span class="price">$25</span>
-            </div>
-            <!-- Box 3 -->
-            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
-                <a class="p-link"><img src="assets/imgs/carts/17.jpeg" alt="" class="product-img"></a>
-                <h2 class="product-title">Smart Phone1</h2>
-                <span class="price">$25</span>
-            </div>
-            <!-- Box 4 -->
-            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
-                <a class="p-link"><img src="assets/imgs/carts/12.jpeg" alt="" class="product-img"></a>
-                <h2 class="product-title">Smart Phone2</h2>
-                <span class="price">$15</span>
-            </div>
-            <!-- Box 7 -->
-            <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
-                <a class="p-link"><img src="assets/imgs/carts/5.jpeg" alt="" class="product-img"></a>
-                <h2 class="product-title">Smart Phone3</h2>
-                <span class="price">$30</span>
-            </div>
-            <!-- Box 5 -->
-            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
-                <a class="p-link"><img src="assets/imgs/carts/20.jpeg" alt="" class="product-img"></a>
-                <h2 class="product-title">Laptop</h2>
-                <span class="price">$100</span>
-            </div>
-            <!-- Box 1 -->
-            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
-                <a class="p-link"><img src="assets/imgs/carts/23.jpeg" alt="" class="product-img"></a>
-                <h2 class="product-title">Laptop1</h2>
-                <span class="price">$85</span>
-            </div>
-            <!-- Box 6 -->
-            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
-                <a class="p-link"><img src="assets/imgs/carts/10.jpg" alt="" class="product-img"></a>
-                <h2 class="product-title">Laptop2</h2>
-                <span class="price">$50</span>
-            </div>
-            <!-- Box 9 -->
-            <div class="product-box col-lg-4 col-md-6 Laptops highprice">
-                <a class="p-link"><img src="assets/imgs/carts/22.jpeg" alt="" class="product-img"></a>
-                <h2 class="product-title">Laptop5</h2>
-                <span class="price">$85</span>
-            </div>
-            <!-- Box 10 -->
-            <div class="product-box col-lg-4 col-md-6 accessories lessprice">
-                <a class="p-link"><img src="assets/imgs/carts/1.jpg" alt="" class="product-img"></a>
-                <h2 class="product-title">st</h2>
-                <span class="price">$10</span>
-            </div>
-            <!-- Box 11 -->
-            <div class="product-box col-lg-4 col-md-6 accessories lessprice">
-                <a class="p-link"><img src="assets/imgs/carts/3.jpg" alt="" class="product-img"></a>
-                <h2 class="product-title">Fmemory</h2>
-                <span class="price">$20</span>
-            </div>
-            <!-- Box 12 -->
-            <div class="product-box col-lg-4 col-md-6 accessories lessprice">
-                <a class="p-link"><img src="assets/imgs/carts/4.jpg" alt="" class="product-img"></a>
-                <h2 class="product-title">Screen</h2>
-                <span class="price">$15</span>
-            </div>
-            <!-- Box 13 -->
-            <div class="product-box col-lg-4 col-md-6 accessories highprice">
-                <a class="p-link"><img src="assets/imgs/carts/13.jpg" alt="" class="product-img"></a>
-                <h2 class="product-title">watch</h2>
-                <span class="price">$50</span>
-            </div>
+            <div class="ps-1 pe-1" id="product-list">
+                <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
+                    <a class="p-link"><img src="assets/imgs/carts/14.jpeg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Smart Phone error</h2>
+                    <span class="Model-Brand">oppo</span>
+                    <span class="price">$1050</span>
+                </div>
+                <!-- Box 3 -->
+                <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
+                    <a class="p-link"><img src="assets/imgs/carts/17.jpeg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Smart Phone1</h2>
+                    <span class="Model-Brand">Xiaomi</span>
+                    <span class="price">$100</span>
+                </div>
+                <!-- Box 4 -->
+                <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
+                    <a class="p-link"><img src="assets/imgs/carts/12.jpeg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Smart Phone2</h2>
+                    <span class="Model-Brand">IPhone</span>
+                    <span class="price">$399</span>
+                </div>
+                <!-- Box 7 -->
+                <div class="product-box col-lg-4 col-md-6 mobiles lessprice">
+                    <a class="p-link"><img src="assets/imgs/carts/5.jpeg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Smart Phone3</h2>
+                    <span class="Model-Brand">Samsung</span>
+                    <span class="price">$599</span>
+                </div>
+                <!-- Box 5 -->
+                <div class="product-box col-lg-4 col-md-6 Laptops highprice">
+                    <a class="p-link"><img src="assets/imgs/carts/20.jpeg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Laptop</h2>
+                    <span class="Model-Brand">Samsung</span>
+                    <span class="price">$4500</span>
+                </div>
+                <!-- Box 1 -->
+                <div class="product-box col-lg-4 col-md-6 Laptops highprice">
+                    <a class="p-link"><img src="assets/imgs/carts/23.jpeg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Laptop1</h2>
+                    <span class="Model-Brand">Acer</span>
+                    <span class="price">$999</span>
+                </div>
+                <!-- Box 6 -->
+                <div class="product-box col-lg-4 col-md-6 Laptops highprice">
+                    <a class="p-link"><img src="assets/imgs/carts/10.jpg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Laptop2</h2>
+                    <span class="Model-Brand">Mac</span>
+                    <span class="price">$5999</span>
+                </div>
+                <!-- Box 9 -->
+                <div class="product-box col-lg-4 col-md-6 Laptops highprice">
+                    <a class="p-link"><img src="assets/imgs/carts/22.jpeg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Laptop5</h2>
+                    <span class="Model-Brand">Dell</span>
+                    <span class="price">$2000</span>
+                </div>
+                <!-- Box 10 -->
+                <div class="product-box col-lg-4 col-md-6 accessories lessprice">
+                    <a class="p-link"><img src="assets/imgs/carts/1.jpg" alt="" class="product-img"></a>
+                    <h2 class="product-title">st</h2>
+                    <span class="Model-Brand">Phone Accessories</span>
+                    <span class="price">$10</span>
+                </div>
+                <!-- Box 11 -->
+                <div class="product-box col-lg-4 col-md-6 accessories lessprice">
+                    <a class="p-link"><img src="assets/imgs/carts/3.jpg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Fmemory</h2>
+                    <span class="Model-Brand">Laptop Accessories</span>
+                    <span class="price">$60</span>
+                </div>
+                <!-- Box 12 -->
+                <div class="product-box col-lg-4 col-md-6 accessories lessprice">
+                    <a class="p-link"><img src="assets/imgs/carts/4.jpg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Screen</h2>
+                    <span class="Model-Brand">Phone Accessories</span>
+                    <span class="price">$15</span>
+                </div>
+                <!-- Box 13 -->
+                <div class="product-box col-lg-4 col-md-6 accessories highprice">
+                    <a class="p-link"><img src="assets/imgs/carts/13.jpg" alt="" class="product-img"></a>
+                    <h2 class="product-title">watch</h2>
+                    <span class="Model-Brand">other Accessories</span>
+                    <span class="price">$500</span>
+                </div>
             </div>
         </div>
     </section>
-    
+
 
     <!-- footer -->
     <footer id="footer" class="border-top footer text-muted">
 
         <div class="footer-top">
             <div class="container">
-                <div class="row d-flex flex-row justify-content-md-center footer-sections">
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-around justify-content-md-evenly footer-sections">
+                    <div class=" footer-links">
                         <h4>Information</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
@@ -251,7 +254,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                    <div class=" footer-links">
                         <h4>MY Account</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
@@ -261,7 +264,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-contact text-wrap">
+                    <div class=" footer-contact text-wrap">
                         <h3>I-TECH</h3>
                         <p>
                             ITI Menofia Branch <br>
@@ -275,27 +278,30 @@
             </div>
         </div>
 
-        <div class="container d-md-flex p-0 pb-3 pt-3 inner-footer text-wrap">
+        <div class="inner-footer">
+            <div class="container text-wrap d-md-flex pt-3 pb-3">
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span> I-TECH
+                            </span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
+                            Team</a>
+                    </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
 
-            <div class="me-md-auto text-center text-md-start">
-                <div class="copyright">
-                    &copy; Copyright <strong><span> I-TECH
-                        </span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
-                        Team</a>
-                </div>
-            </div>
-            <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>
+    
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

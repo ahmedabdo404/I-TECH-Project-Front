@@ -7,6 +7,8 @@
     --forth-color: #272727;
     --fifth-color: #707070;
     --sixth-color: #ffe047;
+    --seventh-color: #ffc107;
+
     --transition1: 0.3s all;
     --transition2: 0.5s all;
     --font-size1: 30px;
@@ -22,7 +24,8 @@
     scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     min-height: 1000px;
     scroll-behavior: smooth;
@@ -37,19 +40,19 @@ header {
     position: sticky;
     top: 0%;
     /* temprory margin because of margin bug in vs*/
-    margin-top:-5%;
+    margin-top: -5%;
     z-index: 5;
     align-content: center;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-    header nav {
-        width: 100%;
-        height: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+header nav {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .top-nav {
     display: flex;
@@ -125,7 +128,7 @@ header a:active {
         width: 50%;
         height: auto;
         background: var(--fifth-color);
-        border-top: .1rem solid rgba(0,0,0,.1);
+        border-top: .1rem solid rgba(0, 0, 0, .1);
         border-radius: 0 0 0 10px;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         display: flex;
@@ -134,7 +137,7 @@ header a:active {
         align-items: center;
         transition: var(--transition1);
         opacity: 0.95;
-        padding: 0.5rem; 
+        padding: 0.5rem;
     }
 
     .menu-links li span {
@@ -143,7 +146,7 @@ header a:active {
 
     .top-nav li {
         text-align: center;
-        margin: 0.8rem ; 
+        margin: 0.8rem;
     }
 
     .top-nav li a span,
@@ -165,7 +168,7 @@ header a:active {
         display: none;
     }
 
-    .current-page{
+    .current-page {
         display: none !important;
     }
 }
@@ -173,7 +176,7 @@ header a:active {
 /* items bar */
 .items-section {
     background-color: var(--sec-color);
-    padding:0.2rem
+    padding: 0.2rem
 }
 
 /* res */
@@ -183,6 +186,7 @@ header a:active {
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* res */
 .I-tech-logo p {
     color: var(--sec-color);
@@ -245,16 +249,18 @@ header a:active {
 }
 
 /* res */
-@media(max-width:768px){
+@media(max-width:768px) {
+
     .cart-icon,
     .account {
         display: none !important;
     }
 
-    .search-bar{
+    .search-bar {
         width: 100%;
     }
 }
+
 /* back to top icon */
 .back-top {
     position: fixed;
@@ -269,18 +275,25 @@ header a:active {
     cursor: pointer;
     justify-content: center;
     opacity: 0;
-    transition: 0.2s all;
-    /* align-items: center; */
+    transition: var(--transition1);
+    align-items: center;
+}
+
+.back-top:hover {
+    background-color: var(--seventh-color);
 }
 
 .back-top i {
-    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
     color: var(--sec-color)
 }
 
-
 /*currnet page*/
-.top-nav li a{
+.top-nav li a {
     color: var(--sec-color) !important;
 }
 
@@ -295,14 +308,15 @@ header a:active {
     display: inline-block;
     position: absolute;
     margin-left: 109px;
-    margin-top: -160px;
+    margin-top: -165px;
     border-radius: 5px;
     z-index: -1;
 }
 
 /* body ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>body*/
 .login-c {
-    margin-top: 6%;
+    margin-top: 7%;
+    min-height: 500px;
 }
 
 .h {
@@ -312,7 +326,7 @@ header a:active {
     margin: 0
 }
 
-.b{
+.b {
     padding: 0.4rem 0.8rem;
     color: var(--sec-color);
     background-color: var(--main-color);
@@ -321,31 +335,27 @@ header a:active {
 }
 
 .login-inputs label,
-.login-inputs input
-{
+.login-inputs input {
     margin-top: 1rem;
 }
 
-.login-inputs input
-{
+.login-inputs input {
     font-size: 15px;
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
 
-    .login-inputs label
-    {
+    .login-inputs label {
         font-size: 15px;
     }
 
-    .login-inputs input
-    {
+    .login-inputs input {
         font-size: 12px;
     }
 }
 
-.v-line{
-    width:1px;
+.v-line {
+    width: 1px;
     height: 200px;
     border: 0.1px solid;
     background-color: var(--forth-color);
@@ -353,27 +363,42 @@ header a:active {
     opacity: 0.3;
 }
 
+
 /* res */
 /* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/
 #footer {
+    box-shadow: 2px 6px 16px gray;
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     white-space: nowrap;
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
     color: var(--sec-color);
     height: 5vh;
 }
 
-#footer .footer-top {
+#footer a {
+    text-decoration: none;
+}
+
+.footer-top {
     padding: 60px 0 30px 0;
-    background: #f9faf9;
+    background-color: var(--third-color);
+}
+
+.inner-footer {
+    width: 100%;
+    margin-left: 200px;
+    background-color: var(--fifth-color);
+    color: var(--sec-color);
+    margin: 0 !important;
 }
 
 #footer .footer-top .footer-contact {
     margin-bottom: 30px;
 }
+
 #footer .footer-top .footer-contact h4 {
     font-size: 22px;
     margin: 0 0 30px 0;
@@ -443,7 +468,7 @@ header a:active {
 }
 
 #footer .credits a {
-    color: var(--main-color);
+    color: #f5a30a;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -452,14 +477,20 @@ header a:active {
     color: var(--sixth-color);
 }
 
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 #footer .social-links a {
     font-size: 18px;
-    display: inline-block;
-    background: var(--main-color);
-    color: #fff;
+    background: var(--sec-color);
+    color: var(--main-color);
     line-height: 1;
     padding: 8px 0;
-    margin-right: 4px;
+    margin-right: 5px;
     border-radius: 50%;
     text-align: center;
     width: 36px;
@@ -468,19 +499,22 @@ header a:active {
 }
 
 #footer .social-links a:hover {
-    background: var(--sixth-color);
-    color: #fff;
+    background: var(--seventh-color);
+    color: var(--sec-color);
     text-decoration: none;
 }
+
 /* res */
-@media (max-width: 650px){
+
+@media (max-width: 650px) {
     .footer-sections {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
-        text-align: center;
+        text-align: center !important;
     }
-    .footer-sections div{
+
+    .footer-sections div {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;

@@ -3,10 +3,13 @@
 :root {
     --main-color: #f5a30a;
     --sec-color: #FFF;
+    --sec-d-color: #FFF;
     --third-color: #f1f1f1;
     --forth-color: #272727;
     --fifth-color: #707070;
     --sixth-color: #ffe047;
+    --seventh-color: #ffc107;
+
     --transition1: 0.3s all;
     --transition2: 0.5s all;
     --font-size1: 30px;
@@ -22,12 +25,12 @@
     scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     min-height: 1000px;
     scroll-behavior: smooth;
 }
-
 
 /* header ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>header*/
 header {
@@ -37,19 +40,23 @@ header {
     position: sticky;
     top: 0%;
     /* temprory margin because of margin bug in vs*/
-    margin-top:-5%;
+    margin-top: -5%;
     z-index: 5;
     align-content: center;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-    header nav {
-        width: 100%;
-        height: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+header nav {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none !important;
+}
 
 .top-nav {
     display: flex;
@@ -57,31 +64,6 @@ header {
     /* margin-left: -60%; */
     color: var(--sec-color);
     margin-bottom: 0;
-}
-
-/*currnet page*/
-.top-nav li {
-    margin-left: 30px;
-}
-
-.top-nav li a {
-    color: var(--sec-color);
-}
-
-.top-nav li:nth-child(2) a {
-    color: var(--main-color);
-}
-
-.current-page {
-    width: 65px;
-    height: 200px;
-    background-color: var(--sec-color);
-    display: inline-block;
-    position: absolute;
-    margin-left: 24px;
-    margin-top: -160px;
-    border-radius: 5px;
-    z-index: -1;
 }
 
 /* temporary cursor (develpoment)*/
@@ -125,7 +107,7 @@ header a:active {
         width: 50%;
         height: auto;
         background: var(--fifth-color);
-        border-top: .1rem solid rgba(0,0,0,.1);
+        border-top: .1rem solid rgba(0, 0, 0, .1);
         border-radius: 0 0 0 10px;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         display: flex;
@@ -134,7 +116,7 @@ header a:active {
         align-items: center;
         transition: var(--transition1);
         opacity: 0.95;
-        padding: 0.5rem; 
+        padding: 0.5rem;
     }
 
     .menu-links li span {
@@ -143,7 +125,7 @@ header a:active {
 
     .top-nav li {
         text-align: center;
-        margin: 0.8rem ; 
+        margin: 0.8rem;
     }
 
     .top-nav li a span,
@@ -165,15 +147,15 @@ header a:active {
         display: none;
     }
 
-    .current-page{
+    .current-page {
         display: none !important;
     }
 }
 
 /* items bar */
 .items-section {
-    background-color: var(--sec-color);
-    padding:0.2rem
+    background-color: var(--sec-d-color);
+    padding: 0.2rem
 }
 
 /* res */
@@ -183,6 +165,7 @@ header a:active {
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* res */
 .I-tech-logo p {
     color: var(--sec-color);
@@ -205,7 +188,7 @@ header a:active {
     width: 50vw;
     height: 38px;
     background-color: var(--third-color);
-    border: 0;
+    border: 1px transparent solid;
     padding: 15px;
     border-radius: 5px;
 }
@@ -245,16 +228,18 @@ header a:active {
 }
 
 /* res */
-@media(max-width:768px){
+@media(max-width:768px) {
+
     .cart-icon,
     .account {
         display: none !important;
     }
 
-    .search-bar{
+    .search-bar {
         width: 100%;
     }
 }
+
 /* back to top icon */
 .back-top {
     position: fixed;
@@ -269,20 +254,53 @@ header a:active {
     cursor: pointer;
     justify-content: center;
     opacity: 0;
-    transition: 0.2s all;
-    /* align-items: center; */
+    transition: var(--transition1);
+    align-items: center;
+}
+
+.back-top:hover {
+    background-color: var(--seventh-color);
 }
 
 .back-top i {
-    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
     color: var(--sec-color)
+}
+
+/*currnet page*/
+.top-nav li {
+    margin-left: 30px;
+}
+
+.top-nav li a {
+    color: var(--sec-color);
+}
+
+.top-nav li:nth-child(2) a {
+    color: var(--main-color);
+}
+
+.current-page {
+    width: 65px;
+    height: 200px;
+    background-color: var(--sec-color);
+    display: inline-block;
+    position: absolute;
+    margin-left: 24px;
+    margin-top: -165px;
+    border-radius: 5px;
+    z-index: -1;
 }
 
 
 /* carousel-slider ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>carousel-slider*/
 .landing {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -306,11 +324,11 @@ header a:active {
     border-radius: 50%;
     background-color: var(--main-color) !important;
     margin-left: 2% !important;
-
 }
-.overlay{
+
+.overlay {
     background-color: rgba(42, 42, 42, 0.50) !important;
-    position: absolute ;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
@@ -326,7 +344,7 @@ header a:active {
 .carousel-caption {
     z-index: 2;
     transition: all 1s;
-    animation: change-color 3s infinite alternate linear ;
+    animation: change-color 3s infinite alternate linear;
 }
 
 .carousel-caption:hover {
@@ -338,6 +356,7 @@ header a:active {
         color: var(--main-color);
         opacity: 0.4;
     }
+
     100% {
         color: var(--third-color);
         opacity: 1;
@@ -352,21 +371,25 @@ header a:active {
     height: 70px !important;
     margin: 2% 5%;
 }
+
 /* adv-section ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>adv-section*/
+
 /* res */
-.adv-section{
-    margin: 7.5px 0;
+.adv-section {
+    margin: 1.5rem 0 1rem 0;
+    padding: 1rem 0;
     width: auto;
-    height: 10vh;
-    background: var(--sec-color);
+    height: auto;
+    background: var(--third-color);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
+
 /* res */
-.advantage{
+.advantage {
     padding: 5px;
     margin: 7.5px 5px;
     width: 250px;
@@ -374,15 +397,15 @@ header a:active {
     background-color: var(--main-color);
     text-align: center;
     border-radius: 5px;
-    color: var(--third-color);
+    color: var(--sec-color);
 }
 
 .advantage h5,
-.advantage p{
+.advantage p {
     margin: 0;
 }
 
-/* adv-section ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>adv-section*/
+/* offers ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>offers*/
 /* res */
 .offers {
     position: relative;
@@ -401,20 +424,22 @@ header a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgb(209, 250, 26,0.7), rgb(146, 189, 29,0.7),rgb(209, 250, 26,0.7));
+    background: linear-gradient(to right, rgb(209, 250, 26, 0.7), rgb(146, 189, 29, 0.7), rgb(209, 250, 26, 0.7));
     animation: ads1 1s alternate infinite;
 
 }
 
 @keyframes ads1 {
     0% {
-        background: linear-gradient(to right, rgb(209, 250, 26,0.7), rgb(146, 189, 29,0.7),rgb(209, 250, 26,0.7));
+        background: linear-gradient(to right, rgb(209, 250, 26, 0.7), rgb(146, 189, 29, 0.7), rgb(209, 250, 26, 0.7));
 
     }
+
     100% {
-        background-color:var(--fifth-color);
+        background-color: var(--fifth-color);
     }
 }
+
 .section2 {
     padding: 10px;
     width: 30%;
@@ -422,40 +447,41 @@ header a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:var(--third-color);
+    background-color: var(--third-color);
     animation: ads2 1s alternate infinite;
 }
 
 @keyframes ads2 {
     0% {
-        background-color:var(--main-color);
+        background-color: var(--main-color);
 
     }
+
     100% {
-        background-color:var(--sixth-color);
+        background-color: var(--sixth-color);
     }
 }
 
-.section1 p{
-    font-weight:600;
+.section1 p {
+    font-weight: 600;
     margin: 0;
     color: var(--sec-color);
 }
 
-.section2 p{
-    font-weight:600;
+.section2 p {
+    font-weight: 600;
     margin: 0;
 }
 
 /* res */
-@media(max-width:1080px){
-    .offers{
+@media(max-width:1080px) {
+    .offers {
         margin-top: 4rem;
     }
 }
 
-@media(max-width:992px){
-    .offers{
+@media(max-width:992px) {
+    .offers {
         margin-top: 5rem;
     }
 
@@ -464,58 +490,87 @@ header a:active {
     }
 }
 
-@media(max-width:520px){
+@media(max-width:520px) {
 
-    .offers{
+    .offers {
         margin-top: 14rem;
     }
 }
 
 /* shop-content ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>shop-content*/
-.section-title{
+.section-title {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 1.5rem;
 }
-.shop{
+
+.shop {
     margin-top: 10px;
     padding-top: 0px
 }
 
-.shop-content{
+.shop-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
     gap: 1.5rem;
+    justify-content: center
 }
 
-.product-box{
+
+.product-box {
     position: relative;
-    min-width: 200px;
+    max-width: 350px;
+    transition: var(--transition2);
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 1rem;
     transition: var(--transition2);
 }
-.product-box:hover{
-    padding: 10px;
+
+@media (max-width: 450px) {
+
+    .shop-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+
+    .product-box {
+        max-width: 250px;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 250px;
+    }
+
+}
+
+.product-box:hover {
     border: 1px solid var(--forth-color);
     transition: var(--transition2);
 }
 
-.product-img{
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.5rem;
-    transition: var(--transition2);
+.product-box:hover .product-img {
+    transform: scale(106%);
 }
-.product-title{
+
+.product-title {
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
-.price{
+
+.price {
     font-weight: 500;
 }
-.add-cart{
+
+.add-cart {
     font-size: 30px;
     position: absolute;
     bottom: 0;
@@ -525,24 +580,25 @@ header a:active {
     padding: 10px;
     cursor: pointer;
 }
-.add-cart:hover{
+
+.add-cart:hover {
     background: var(--main-color);
     transition: var(--transition2);
 }
 
-/* res */
 /* offer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>offer*/
+/* res */
 .offer {
     width: 100%;
     max-height: 60vh;
-    border: solid var(--fifth-color) 3px;
+    /* border: solid var(--fifth-color) 3px; */
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: row;
     border-radius: 10px;
     padding: 0.5rem;
-    box-shadow: 2px 6px 16px gray ;
+    box-shadow: 2px 6px 16px gray;
 
     /* align-items: center; */
 }
@@ -555,7 +611,7 @@ header a:active {
 
 }
 
-.discount{
+.discount {
     position: absolute;
     align-self: flex-end;
     width: 120px;
@@ -576,13 +632,13 @@ header a:active {
     color: var(--forth-color)
 }
 
-.discount p{
+.discount p {
     margin: 0;
     color: var(--sec-color);
     font-size: var(--font-size1);
 }
 
-.sec1 img{
+.sec1 img {
     max-width: 500px;
 }
 
@@ -592,16 +648,16 @@ header a:active {
     flex-direction: column;
 }
 
-.sec2 h1{
+.sec2 h1 {
     color: var(--main-color);
     margin-bottom: 1.5rem;
 }
 
-.sec2 h3{
+.sec2 h3 {
     margin-bottom: 1rem;
 }
 
-.sec2 p{
+.sec2 p {
     margin-bottom: 1rem;
 }
 
@@ -615,6 +671,7 @@ header a:active {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .timer div {
     width: auto;
     height: 4rem;
@@ -629,21 +686,21 @@ header a:active {
 }
 
 .timer div h2,
-.timer div p{
+.timer div p {
     font-size: 1.2rem;
     color: var(--sec-color);
-    margin: 0 ;
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
 }
 
 /* res */
-@media (max-width: 992px){
+@media (max-width: 992px) {
 
     .sec1 {
         flex-direction: row;
     }
 
-    .discount{
+    .discount {
         top: -2%;
         left: 62%;
         width: 90px;
@@ -653,12 +710,12 @@ header a:active {
     .discount h5 {
         font-size: 0.9rem;
     }
-    
-    .discount p{
+
+    .discount p {
         font-size: 1.2rem;
     }
 
-    .sec1 img{
+    .sec1 img {
         height: 250px;
         align-self: flex-end;
     }
@@ -667,24 +724,24 @@ header a:active {
         width: auto;
     }
 
-    .sec2 h1{
+    .sec2 h1 {
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
     }
-    
-    .sec2 h3{
+
+    .sec2 h3 {
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
     }
-    
-    .sec2 p{
+
+    .sec2 p {
         margin-bottom: 0.5rem;
         font-size: 1rem;
     }
 }
 
 @media(max-width:768px) {
-    .discount{
+    .discount {
         top: -2%;
         left: 48%;
         width: 90px;
@@ -694,27 +751,27 @@ header a:active {
     .discount h5 {
         font-size: 1rem;
     }
-    
-    .discount p{
+
+    .discount p {
         font-size: 1.3rem;
     }
 
-    .sec1 img{
+    .sec1 img {
         height: 170px;
         align-self: flex-end;
     }
 
-    .sec2 h1{
+    .sec2 h1 {
         margin-bottom: 0.5rem;
         font-size: 1.6rem;
     }
-    
-    .sec2 h3{
+
+    .sec2 h3 {
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
     }
-    
-    .sec2 p{
+
+    .sec2 p {
         margin-bottom: 0.5rem;
         font-size: 0.9rem;
     }
@@ -724,10 +781,10 @@ header a:active {
     }
 
     .timer div h2,
-    .timer div p{
+    .timer div p {
         font-size: 0.8rem;
-        margin: 0 ;
-        padding: 0 ;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -740,7 +797,7 @@ header a:active {
         text-align: center;
     }
 
-    .discount{
+    .discount {
         top: -2%;
         left: 90%;
         width: 75px;
@@ -750,29 +807,31 @@ header a:active {
     .discount h5 {
         font-size: 0.9rem;
     }
-    
-    .discount p{
+
+    .discount p {
         font-size: 1.2rem;
     }
-    .sec1{
+
+    .sec1 {
         justify-content: center;
     }
-    .sec1 img{
+
+    .sec1 img {
         max-height: 150px;
         align-self: flex-end;
     }
 
-    .sec2 h1{
+    .sec2 h1 {
         margin-bottom: 0.5rem;
         font-size: 1.6rem;
     }
-    
-    .sec2 h3{
+
+    .sec2 h3 {
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
     }
-    
-    .sec2 p{
+
+    .sec2 p {
         margin-bottom: 0.5rem;
         font-size: 0.8rem;
     }
@@ -782,7 +841,7 @@ header a:active {
     }
 
     .timer div h2,
-    .timer div p{
+    .timer div p {
         font-size: 0.8rem;
     }
 }
@@ -802,78 +861,136 @@ header a:active {
     padding: 1rem;
     margin-bottom: 40px
 }
-.Join-us input{
+
+.Join-us input {
     width: 30vw;
     height: 38px;
-    margin-top: 3px; 
+    margin-top: 3px;
 }
+
 .Join-us button {
     padding: 7px;
-    margin-left: -5px; 
+    margin-left: -5px;
     border-radius: 0 5px 5px 0 !important;
     height: 44px !important;
 }
+
 /* res */
-@media (max-width: 768px){
-    .Join-us h1{
+@media (max-width: 768px) {
+    .Join-us h1 {
         font-size: 1.3rem;
     }
 
-    .Join-us p{
+    .Join-us p {
         font-size: 0.9rem;
     }
 
-    .Join-us input{
+    .Join-us input {
         width: 50vw;
     }
+
     .Join-us button {
         padding: 5px;
         font-size: 0.8rem;
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
     .Join-us {
         text-align: center;
     }
-    .Join-us h1{
+
+    .Join-us h1 {
         font-size: 1rem;
     }
 
-    .Join-us p{
+    .Join-us p {
         font-size: 0.8rem;
     }
 
-    .Join-us input{
+    .Join-us input {
         width: 60vw;
     }
+
     .Join-us button {
-        padding: 2.5px 5px ;
+        padding: 2.5px 5px;
         font-size: 0.8rem;
     }
+}
+
+
+/*features*/
+.features {
+    padding-top: 0px;
+    margin: 2rem;
+}
+
+.features .icon-box {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid #eef0ef;
+    /* cursor: pointer; */
+}
+
+.features .icon-box i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+.features .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+    margin-left: 1rem;
+    color: var(--forth-color);
+}
+
+.features .icon-box:hover {
+    border-color: var(--Main-color);
 }
 
 /* res */
 /* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/
 #footer {
+    box-shadow: 2px 6px 16px gray;
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     white-space: nowrap;
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
     color: var(--sec-color);
     height: 5vh;
 }
 
-#footer .footer-top {
+#footer a{
+    text-decoration: none;
+}
+
+.footer-top {
     padding: 60px 0 30px 0;
-    background: #f9faf9;
+    background-color: var(--third-color);
+}
+
+.inner-footer {
+    width: 100%;
+    margin-left: 200px;
+    background-color: var(--fifth-color);
+    color: var(--sec-color);
+    margin: 0 !important;
 }
 
 #footer .footer-top .footer-contact {
     margin-bottom: 30px;
 }
+
 #footer .footer-top .footer-contact h4 {
     font-size: 22px;
     margin: 0 0 30px 0;
@@ -943,7 +1060,7 @@ header a:active {
 }
 
 #footer .credits a {
-    color: var(--main-color);
+    color: #f5a30a;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -952,14 +1069,20 @@ header a:active {
     color: var(--sixth-color);
 }
 
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 #footer .social-links a {
     font-size: 18px;
-    display: inline-block;
-    background: var(--main-color);
-    color: #fff;
+    background: var(--sec-color);
+    color: var(--main-color);
     line-height: 1;
     padding: 8px 0;
-    margin-right: 4px;
+    margin-right: 5px;
     border-radius: 50%;
     text-align: center;
     width: 36px;
@@ -968,19 +1091,22 @@ header a:active {
 }
 
 #footer .social-links a:hover {
-    background: var(--sixth-color);
-    color: #fff;
+    background: var(--seventh-color);
+    color: var(--sec-color);
     text-decoration: none;
 }
+
 /* res */
-@media (max-width: 650px){
+
+@media (max-width: 650px) {
     .footer-sections {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
-        text-align: center;
+        text-align: center !important;
     }
-    .footer-sections div{
+
+    .footer-sections div {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;

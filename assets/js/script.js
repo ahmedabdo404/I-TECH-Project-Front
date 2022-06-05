@@ -7,7 +7,6 @@ menu.onclick = function () {
     navbar.classList.toggle('active')
 }
 
-
 // back to top
 let upBtn = document.querySelector(".back-top")
 
@@ -32,7 +31,7 @@ let hoursDiv = document.querySelector(".Hours")
 let minutesDiv = document.querySelector(".Minutes")
 let secondsDiv = document.querySelector(".Seconds")
 
-let timer = new Date("Mar 1, 2022 00:00:00").getTime();
+let timer = new Date("Sep 6, 2022 12:00:00").getTime();
 // console.log(timer)
 
 let counter = setInterval(() => {
@@ -72,14 +71,13 @@ var options = {
 var typed = new Typed('.element', options);
 
 
-
-// add links to products
-let productslink = document.querySelectorAll(".p-link");
-window.onload = () => {
-    for (let l of productslink)
-        //l.setAttribute("asp-action", "details");
-        l.setAttribute("href", "sub.html");
-}
+// // add links to products
+// let productslink = document.querySelectorAll(".p-link");
+// window.onload = () => {
+//     for (let l of productslink)
+//         //l.setAttribute("asp-action", "details");
+//         l.setAttribute("href", "sub.html");
+// }
 
 $( function() {
     var availableTags = [
@@ -98,3 +96,21 @@ $( function() {
         source: availableTags
     });
 } );
+
+// Join us confirm
+let jform = document.querySelector(".Join-us form")
+let jInput= document.querySelector(".Join-us input")
+let sentDiv= document.querySelector(".sentDiv")
+
+jform.onsubmit = (e) => {
+    if (jInput.value != "") {
+        e.preventDefault();
+        sentDiv.classList.remove("d-none");
+        sentDiv.innerHTML += jInput.value
+        setTimeout(()=> jform.submit(), 3000)
+        // alert(`We will send to you thae lastest offers to: ${jInput.value}`);
+
+    }else{
+        e.preventDefault();
+    }
+}

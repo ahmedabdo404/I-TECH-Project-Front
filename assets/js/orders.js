@@ -1,6 +1,6 @@
 // hide nav bar
 let menu = document.querySelector('#menu-bar i')
-let navbar = document.querySelector('.top-nav')
+let navbar = document.querySelector('.top-nav, .menu-links')
 
 menu.onclick = function () {
     menu.classList.toggle('fa-times')

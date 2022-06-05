@@ -22,8 +22,11 @@ window.onscroll = () => {
 upBtn.onclick = () => {
     scrollTo({ top: 0, behavior: "smooth" });
 }
+
+//
+
 // autocomplete
-$(function () {
+$( function() {
     var availableTags = [
         "mobile1",
         "mobile2",
@@ -36,8 +39,7 @@ $(function () {
         "accessories mobiles",
         "accessories laptops"
     ];
-    $("#tags").autocomplete({
+    $( "#tags" ).autocomplete({
         source: availableTags
     });
-});
-
+} );

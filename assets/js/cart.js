@@ -1,6 +1,6 @@
 // hide nav bar
 let menu = document.querySelector('#menu-bar i')
-let navbar = document.querySelector('.top-nav')
+let navbar = document.querySelector('.top-nav, .menu-links')
 
 menu.onclick = function () {
     menu.classList.toggle('fa-times')
@@ -24,3 +24,22 @@ upBtn.onclick = () => {
 }
 
 //
+
+let removeBtn = document.querySelectorAll(".product-remove")
+let productsParent = document.querySelector("#products-Parent")
+let cartItemsNumber = document.querySelector(".cartItemsNumber")
+let totalPrice = document.querySelector(".total-price")
+let dicount = document.querySelector(".dicount")
+
+removeBtn.forEach(e => {
+    e.onclick = () =>{
+        e.parentElement.parentElement.remove()
+        cartItemsNumber.innerText = cartItemsNumber.textContent - 1;
+        let newPrice = totalPrice.textContent.replace("$", "")
+        totalPrice.innerText = newPrice - 100 + "$";
+        
+        if(productsParent.children.length == 0)
+            dicount.innerText = "0%"
+
+    }
+})

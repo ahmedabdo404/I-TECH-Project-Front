@@ -7,6 +7,7 @@
     --forth-color: #272727;
     --fifth-color: #707070;
     --sixth-color: #ffe047;
+    --seventh-color: #ffc107;
     --transition1: 0.3s all;
     --transition2: 0.5s all;
     --font-size1: 30px;
@@ -79,7 +80,7 @@ header {
     display: inline-block;
     position: absolute;
     margin-left: 24px;
-    margin-top: -160px;
+    margin-top: -165px;
     border-radius: 5px;
     z-index: -1;
 }
@@ -255,6 +256,7 @@ header a:active {
         width: 100%;
     }
 }
+
 /* back to top icon */
 .back-top {
     position: fixed;
@@ -269,19 +271,27 @@ header a:active {
     cursor: pointer;
     justify-content: center;
     opacity: 0;
-    transition: 0.2s all;
-    /* align-items: center; */
+    transition: var(--transition1);
+    align-items: center;
+}
+
+.back-top:hover {
+    background-color: var(--seventh-color);
 }
 
 .back-top i {
-    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
     color: var(--sec-color)
 }
 
 /* body ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>body*/
 
 .contact-c {
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .h{
@@ -309,24 +319,38 @@ header a:active {
 /* res */
 /* footer ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer*/
 #footer {
+    box-shadow: 2px 6px 16px gray;
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     white-space: nowrap;
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
     color: var(--sec-color);
     height: 5vh;
 }
 
-#footer .footer-top {
+#footer a{
+    text-decoration: none;
+}
+
+.footer-top {
     padding: 60px 0 30px 0;
-    background: #f9faf9;
+    background-color: var(--third-color);
+}
+
+.inner-footer {
+    width: 100%;
+    margin-left: 200px;
+    background-color: var(--fifth-color);
+    color: var(--sec-color);
+    margin: 0 !important;
 }
 
 #footer .footer-top .footer-contact {
     margin-bottom: 30px;
 }
+
 #footer .footer-top .footer-contact h4 {
     font-size: 22px;
     margin: 0 0 30px 0;
@@ -396,7 +420,7 @@ header a:active {
 }
 
 #footer .credits a {
-    color: var(--main-color);
+    color: #f5a30a;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -405,14 +429,20 @@ header a:active {
     color: var(--sixth-color);
 }
 
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 #footer .social-links a {
     font-size: 18px;
-    display: inline-block;
-    background: var(--main-color);
-    color: #fff;
+    background: var(--sec-color);
+    color: var(--main-color);
     line-height: 1;
     padding: 8px 0;
-    margin-right: 4px;
+    margin-right: 5px;
     border-radius: 50%;
     text-align: center;
     width: 36px;
@@ -421,19 +451,22 @@ header a:active {
 }
 
 #footer .social-links a:hover {
-    background: var(--sixth-color);
-    color: #fff;
+    background: var(--seventh-color);
+    color: var(--sec-color);
     text-decoration: none;
 }
+
 /* res */
-@media (max-width: 650px){
+
+@media (max-width: 650px) {
     .footer-sections {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
-        text-align: center;
+        text-align: center !important;
     }
-    .footer-sections div{
+
+    .footer-sections div {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;

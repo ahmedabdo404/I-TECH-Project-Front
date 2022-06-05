@@ -106,11 +106,11 @@
                 </div>
                 <div class="speces">
                     <div class="Product-Title">
-                        <h4>Product Title</h4>
+                        <h5>Product title</h5>
                         <hr>
                         <span class="d-block">
-                            Brand:
-                            <p class="d-inline">HP</p>
+                            Name:
+                            <p class="d-inline">hp pavilion 75</p>
                         </span>
                         <span class="d-block">
                             Availability:
@@ -118,23 +118,27 @@
                         </span>
                     </div>
                     <div class="Product-dimensions">
-                        <h4>Product Dimensions</h4>
+                        <h5>Product details</h5>
                         <hr>
                         <span class="d-block">
-                            Length:
-                            <p class="d-inline">40cm</p>
+                            Brand:
+                            <p class="d-inline">HP</p>
+                        </span>
+                        <span class="d-block">
+                            Color:
+                            <p class="d-inline">Gray</p>
                         </span>
                         <span class="d-block">
                             width:
-                            <p class="d-inline">60cm</p>
+                            <p class="d-inline">50cm</p>
                         </span>
                         <span>
                             Height:
-                            <p class="d-inline">60cm</p>
+                            <p class="d-inline">30cm</p>
                         </span>
                     </div>
-                    <div class="Product-reviews">
-                        <h4>Product Reviews</h4>
+                    <div class="Product-reviews mt-3">
+                        <h5>Product Reviews</h5>
                         <hr>
                         <span class="d-block">
                             <i class='bx bxs-star'></i>
@@ -142,31 +146,36 @@
                             <i class='bx bxs-star'></i>
                             <i class='bx bxs-star'></i>
                             <i class='bx bx-star'></i>
-                            <p class="d-inline">&nbsp;&nbsp;&nbsp;1 review</p>
+                            <p class="d-inline">Good</p>
                         </span>
                     </div>
                 </div>
                 <div class="Desc">
                     <div class="Product-Description">
-                        <h4>Product description</h4>
+                        <h5>Product description</h5>
                         <hr>
                         <span class="d-block">
-                            <p class="d-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, id
-                                distinctio. Earum officiis qui dolorum facere recusandae voluptates quaerat dolores
-                                ratione, maiores vel non dicta asperiores? Expedita dicta sunt in.</p>
+                            <p class="d-inline">hp pavilion75
+                                <br>
+                                price: 499$
+                                <br>
+                                discount: 101$
+                            </p>
                         </span>
                     </div>
                     <div class="Product-price">
-                        <h4>Product price</h4>
+                        <h5>Product price</h5>
                         <hr>
                         <span class="d-block price-val">
                             <p class="d-inline">600$</p>
                             <p class="d-inline">499$</p>
                         </span>
-                        <span class="d-flex justify-content-center align-items-center flex-row add-to-cart">
-                            <i class='bx bxs-cart-add add-cart '></i>
-                            <p class="d-inline">add-to cart</p>
-                        </span>
+                        <a href="cart.html" class="text-decoration-none">
+                            <span class="d-flex justify-content-center align-items-center flex-row add-to-cart">
+                                <i class='bx bxs-cart-add add-cart '></i>
+                                <p class="d-inline">add-to cart</p>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -178,16 +187,38 @@
                 </div>
                 <div class="d-flex flex-row" id="ca-body">
                     <div>
-                        Body Description:<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quo facere aliquam earum hic nemo repudiandae ducimus est laboriosam doloribus eos beatae fugit veniam eum maxime, ipsum iure similique fuga?
+                        hp pavilion75
+                        <br>
+                        price: 499$
+                        <br>
+                        discount: 101$
                     </div>
                     <div hidden>
-                        Body Specification:<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt deserunt minima possimus repellendus corporis aut cum quo quaerat! Qui ducimus voluptates vero! Voluptates earum iure quod eligendi modi beatae quia?
+                        Brand: HP
+                        <br>
+                        Color: Gray
+                        <br>
+                        width: 50cm
+                        <br>
+                        Height: 30cm
                     </div>
-                    <div hidden>
-                        Body review:<br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem, atque nemo tenetur veritatis fuga dolore modi exercitationem quidem labore accusantium, delectus reiciendis quam voluptates architecto hic debitis sapiente earum.
+                    <div hidden class="Customers-reviews">
+                        <h5>Customers reviews:</h5><br>
+                        <h6>Total Reviews: 5</h6>
+                        <p class="d-inline">Add Your Review: </p>
+                        <section class="d-inline-block">
+                            <i class='bx bx-star' title="1 of 5"></i>
+                            <i class='bx bx-star' title="2 of 5"></i>
+                            <i class='bx bx-star' title="3 of 5"></i>
+                            <i class='bx bx-star' title="4 of 5"></i>
+                            <i class='bx bx-star' title="5 of 5"></i>
+                        </section>
+                        <p class="review-value d-inline">
+
+                        </p>
+                        <button type="button" class="btn btn-warning ms-md-2 ms-0" disabled>
+                            <a href="login.html" class="text-decoration-none">Login To Complete Review</a>
+                        </button>
 
                     </div>
                 </div>
@@ -200,8 +231,9 @@
 
         <div class="footer-top">
             <div class="container">
-                <div class="row d-flex flex-row justify-content-md-center footer-sections">
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-around justify-content-md-evenly footer-sections">
+                    <div class=" footer-links">
                         <h4>Information</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
@@ -212,7 +244,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                    <div class=" footer-links">
                         <h4>MY Account</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
@@ -222,7 +254,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-contact text-wrap">
+                    <div class=" footer-contact text-wrap">
                         <h3>I-TECH</h3>
                         <p>
                             ITI Menofia Branch <br>
@@ -236,24 +268,26 @@
             </div>
         </div>
 
-        <div class="container d-md-flex p-0 pb-3 pt-3 inner-footer text-wrap">
+        <div class="inner-footer">
+            <div class="container text-wrap d-md-flex pt-3 pb-3">
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span> I-TECH
+                            </span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
+                            Team</a>
+                    </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
 
-            <div class="me-md-auto text-center text-md-start">
-                <div class="copyright">
-                    &copy; Copyright <strong><span> I-TECH
-                        </span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
-                        Team</a>
-                </div>
-            </div>
-            <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>

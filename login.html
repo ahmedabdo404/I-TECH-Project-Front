@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- internal Libs -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link href="assets/imgs/icon.svg" rel="icon">
+
+    <link rel="stylesheet" href="assets/css/login.css">
     <title>I-Tech</title>
-    <!-- External Libs -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
     <header>
         <nav class="container d-flex flex-row justify-content-between">
-            <a href="index.html" class="I-tech-logo"><p> I-TECH</p></a>
+            <a href="index.html" class="I-tech-logo">
+                <p> I-TECH</p>
+            </a>
             <ul class="top-nav">
                 <div class="current-page"></div>
                 <li><a href="index.html">Home</a></li>
@@ -94,27 +95,31 @@
                             <a href="forgetPassword.html">Forgot your password?</a>
                             <input type="submit" value="LOG IN" class="b mt-3 ms-lg-3 mt-lg-0 ">
                         </form>
-                        <div class="col-1 align-self-center d-none d-lg-flex"><div class="v-line"></div></div>
+                        <div class="col-1 align-self-center d-none d-lg-flex">
+                            <div class="v-line"></div>
+                        </div>
                         <div class="col-12 mt-3 col-lg-5 d-flex flex-column justify-content-evenly p-0">
                             <div>
                                 <h5>Sign UP</h5>
                                 <P>Sign up on My tech platform</P>
                             </div>
-                            <a href="signup.html" class="mt-3"><input type="button" value="Sign Up" class="b"></a>
+                            <a href="#" class="mt-3"><input type="button" value="Sign Up" class="b"></a>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
     </section>
+
     <!-- footer -->
     <footer id="footer" class="border-top footer text-muted">
 
         <div class="footer-top">
             <div class="container">
-                <div class="row d-flex flex-row justify-content-md-center footer-sections">
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-around justify-content-md-evenly footer-sections">
+                    <div class=" footer-links">
                         <h4>Information</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
@@ -125,7 +130,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+                    <div class=" footer-links">
                         <h4>MY Account</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="login.html">Sign In</a></li>
@@ -135,7 +140,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 footer-contact text-wrap">
+                    <div class=" footer-contact text-wrap">
                         <h3>I-TECH</h3>
                         <p>
                             ITI Menofia Branch <br>
@@ -149,32 +154,33 @@
             </div>
         </div>
 
-        <div class="container d-md-flex p-0 pb-3 pt-3 inner-footer text-wrap">
+        <div class="inner-footer">
+            <div class="container text-wrap d-md-flex pt-3 pb-3">
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span> I-TECH
+                            </span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
+                            Team</a>
+                    </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
 
-            <div class="me-md-auto text-center text-md-start">
-                <div class="copyright">
-                    &copy; Copyright <strong><span> I-TECH
-                        </span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    Designed by <a href="https://github.com/ahmedabdo404/I-TECH-Project" target="_blank"> I-TECH
-                        Team</a>
-                </div>
-            </div>
-            <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>
-    <!-- <script src="/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/login.js"></script>
 </body>
 
 </html>
